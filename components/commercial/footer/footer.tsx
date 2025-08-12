@@ -5,7 +5,7 @@ import { ArrowRight, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { motion, Variants } from '@/components/module/framer-motion'; 
 import { TikTokIcon } from '@/components/icons/tiktok-icon';
 import { WhatsAppIcon } from '@/components/icons/whatsapp-icon';
-import { QuoteDialog } from '@/components/nav/dialog-quote';
+import { QuoteDialog } from '@/components/commercial/header/dialog-quote';
 import { useState } from 'react';
 import Image from 'next/image';
 
