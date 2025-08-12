@@ -1,4 +1,4 @@
-import { NavigationItem } from "../nav-data";
+import { NavigationItem } from "@/types/share/nav";
 
 // commercial site nav data
 export const commercialNavigationData: NavigationItem[] = [
