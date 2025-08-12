@@ -10,7 +10,7 @@ import { Approach } from "@/components/commercial/home/approach";
 import { BusinessProtection } from "@/components/commercial/home/business-protection";
 
 // data for hero section
-export const heroData: VersatileHeroData = {
+const heroData: VersatileHeroData = {
   title: (
     <>
       Safe & Reliable Pest Control for Texas Businesses.
@@ -32,7 +32,7 @@ export const heroData: VersatileHeroData = {
 };
 
 // data for industry solution
-export const industrySolutionsData: IndustrySolutionsData = {
+const industrySolutionsData: IndustrySolutionsData = {
   tagline: 'INDUSTRIES WE SERVE',
   title: (
     <>
@@ -82,7 +82,7 @@ export const industrySolutionsData: IndustrySolutionsData = {
 };
 
 // data for approach
-export const ourApproachData: ApproachData = {
+const ourApproachData: ApproachData = {
   tagline: 'HOW IT WORKS',
   title: 'Our Approach',
   description: 'A Strategic Approach That Works Around Your Business',
@@ -114,7 +114,7 @@ export const ourApproachData: ApproachData = {
 };
 
 // business protect data
-export const businessProtectionData: BusinessProtectionData = {
+const businessProtectionData: BusinessProtectionData = {
   tagline: 'WHY US?',
   title: (
     <>
