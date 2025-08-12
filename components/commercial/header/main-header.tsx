@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from '@/components/module/framer-motion';
 import { ScrollArea, ScrollBar } from '@/components/ui/scroll-area';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
-import { commercialNavigationData } from '@/lib/data/nav-data';
+import { commercialNavigationData } from '@/lib/data/com/nav';
 
 import { MegaMenu } from './mega-menu';
 import { QuoteDialog } from './dialog-quote';
