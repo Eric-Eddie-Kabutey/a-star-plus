@@ -17,11 +17,7 @@ const heroData: VersatileHeroData = {
     </>
   ),
   description: 'Protect your property, customers, and reputation with expert pest solutions tailored for commercial spaces.',
-  actions: (
-    <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-lg py-6 px-8 rounded-lg">
-      <Link href="#">Get a Free Inspection</Link>
-    </Button>
-  ),
+  actions: "Get a Free Inspection",
   imageUrl: '/assets/com/images/hero-side.png',
   imageAlt: 'Technician in blue gloves holding a pest control spray bottle.',
   features: [
