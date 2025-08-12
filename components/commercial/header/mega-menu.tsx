@@ -1,7 +1,7 @@
 import { motion, Variants } from '@/components/module/framer-motion';
 import Link from 'next/link';
 import { chunkArray, cn } from '@/lib/utils';
-import { SubMenu } from '@/lib/data/nav-data';
+import { SubMenu } from '@/types/share/nav';
 
 interface MegaMenuProps {
   submenu: SubMenu;
