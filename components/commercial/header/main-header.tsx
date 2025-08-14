@@ -41,7 +41,7 @@ export function MainHeader() {
         <div className="container mx-auto flex h-20 items-center justify-between px-4">
           {/* Logo */}
           <Link href="/commercial">
-            <Image src="/assets/logos/logo.png" alt="Logo" width={110} height={32} className='h-12 w-auto' />
+            <Image src="/assets/shared/logos/logo.png" alt="Logo" width={100} height={100} className='h-12 w-auto md:w-20 md:h-20' />
           </Link>
 
           {/* Desktop Navigation */}
@@ -98,7 +98,7 @@ export function MainHeader() {
                           <ScrollArea className="flex-grow">
                               <div className="flex flex-col space-y-3 pl-4">
                                 {item.submenu.columns.flatMap(col => col.links).map(link => (
-                                  <Link key={link.label} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-gray-600 hover:text-blue-600">{link.label}</Link>
+                                  <Link key={link.label} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-gray-600 hover:bg-[#000089]">{link.label}</Link>
                                 ))}
                               </div>
                         <ScrollBar orientation="vertical" className="w-2 bg-gray-300 rounded-full" /> 
@@ -108,9 +108,9 @@ export function MainHeader() {
                       ) : null)}
                     </Accordion>
                     <div className="mt-auto flex flex-col space-y-4 pt-6 border-t">
-                      <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-center text-gray-700 hover:text-blue-600">Login</Link>
-                      <button onClick={() => { setIsAccountDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg border border-blue-600 py-2.5 text-lg font-semibold text-blue-600 hover:bg-blue-50">Create an account</button>
-                      <button onClick={() => { setIsQuoteDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg bg-blue-600 py-2.5 text-lg font-semibold text-white hover:bg-blue-700">Get a Quote</button>
+                      <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-center text-gray-700 hover:bg-[#000089]">Login</Link>
+                      <button onClick={() => { setIsAccountDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg border bg-[#000084] py-2.5 text-lg font-semibold  hover:bg-blue-50">Create an account</button>
+                      <button onClick={() => { setIsQuoteDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg bg-[#000084] py-2.5 text-lg font-semibold text-white hover:bg-[#000089]">Get a Quote</button>
                     </div>
                   </nav>                                 
               </SheetContent>

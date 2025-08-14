@@ -9,14 +9,12 @@ import { QuoteDialog } from '@/components/commercial/header/dialog-quote';
 import { useState } from 'react';
 import Image from 'next/image';
 
-// --- Data (remains the same) ---
 const footerLinks = {
   // ... (all link data from the previous step)
   services: [ { name: 'Pest Control', href: '#' }, { name: 'Termite Control', href: '#' }, { name: 'Home Services', href: '#' }, ], pestLibrary: [ { name: 'Browse All Pests', href: '#' }, ], aStarPlus: [ { name: 'Expert Training', href: '#' }, { name: 'Environmental Responsibility', href: '#' }, { name: 'Commitment to Education', href: '#' }, { name: 'Community Involvement', href: '#' }, { name: 'Franchise Opportunity', href: '#' }, { name: 'Press and Media', href: '#' }, { name: 'Company History', href: '#' }, { name: 'Ask A Star Plus', href: '#' }, { name: 'FAQs', href: '#' }, { name: 'Customer Reviews', href: '#' }, ], customerCare: [ { name: 'My Account', href: '#' }, { name: 'Pay Bill', href: '#' }, { name: 'Contact Us', href: '#' }, { name: 'Product Labels', href: '#' }, { name: 'Subscribe to Our Newsletter', href: '#' }, ],
 };
 const socialLinks = [ { name: 'LinkedIn', href: '#', icon: Linkedin }, { name: 'TikTok', href: '#', icon: TikTokIcon }, { name: 'Twitter', href: '#', icon: Twitter }, { name: 'Instagram', href: '#', icon: Instagram }, { name: 'WhatsApp', href: '#', icon: WhatsAppIcon }, ];
 
-// --- Animation Variants ---
 const footerContentVariants: Variants = {
   hidden: { opacity: 0, x: 50 },
   visible: {
@@ -25,7 +23,7 @@ const footerContentVariants: Variants = {
     transition: {
       duration: 0.6,
       ease: 'easeOut',
-      staggerChildren: 0.1, // This will animate children one by one
+      staggerChildren: 0.1,
     },
   },
 };
@@ -43,11 +41,11 @@ export function Footer() {
     <>
       <QuoteDialog open={isQuoteDialogOpen} onOpenChange={setIsQuoteDialogOpen} />
       
-      <footer className="bg-black text-white overflow-hidden"> {/* Add overflow-hidden to contain the animation */}
+      <footer className="bg-black text-white overflow-hidden"> 
         <motion.div
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }} // Trigger animation when 20% is visible, only once
+          viewport={{ once: true, amount: 0.2 }} 
           variants={footerContentVariants}
         >
           {/* Top CTA Section */}
@@ -72,7 +70,7 @@ export function Footer() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
                 {/* Column 1: Logo and About */}
                 <motion.div variants={itemVariants} className="lg:col-span-2">                                  
-                                  <Image src="/assets/logos/logo-simple.png" alt='a start logo' width={150} height={50} />
+                                  <Image src="/assets/shared/logos/logo-simple.png" alt='a start logo' width={100} height={100} className='h-12 w-auto md:w-20 md:h-20' />
                   <p className="mt-6 text-sm text-gray-400 max-w-sm">
                     Whether you are struggling with rodents, termites, cockroaches, or other unwanted guests, we have got you covered...
                   </p>
