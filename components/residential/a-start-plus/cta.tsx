@@ -1,0 +1,89 @@
+'use client';
+
+import React from 'react';
+import { motion, Variants } from '@/components/module/framer-motion';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button'; 
+import type { CtaData } from '@/types/residential/cta';
+
+export function CtaSection({
+  title,  
+  taglineItems,
+  primaryAction,
+  secondaryAction,
+}: CtaData) {
+
+  const containerVariants: Variants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.8,
+        ease: 'easeOut',
+        staggerChildren: 0.2,
+      },
+    },
+  };
+
+  const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5 },
+    },
+  };
+
+  return (
+    <section className="py-12 md:py-20 bg-gray-900">
+      <div className="container mx-auto px-4">
+        <motion.div
+          className="bg-red-600 rounded-xl p-8 md:p-16 text-center flex flex-col items-center"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {/* Main Title */}
+          <motion.h2
+            className="text-3xl md:text-4xl font-bold text-white max-w-2xl"
+            variants={itemVariants}
+          >
+            {title}
+          </motion.h2>
+
+          {/* Tagline with Icon */}
+          <motion.div
+            className="mt-4 flex items-center gap-2 text-white/80"
+            variants={itemVariants}
+          >            
+            <div className="flex items-center gap-2 text-sm font-medium">
+              {taglineItems.map((item, index) => (
+                <React.Fragment key={item}>
+                  <span>{item}</span>
+                  {index < taglineItems.length - 1 && (
+                    <span className="opacity-50">|</span>
+                  )}
+                </React.Fragment>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Action Buttons */}
+          <motion.div
+            className="mt-8 flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto"
+            variants={itemVariants}
+          >
+            <Button asChild size="lg" variant="outline" className="text-white bg-red-600 border-white/50 hover:bg-white/10 hover:text-white w-full sm:w-auto">
+              <Link href={primaryAction.href}>{primaryAction.text}</Link>
+            </Button>
+            <Button asChild size="lg" className="bg-white text-red-700 hover:bg-gray-200 w-full sm:w-auto">
+              <Link href={secondaryAction.href}>{secondaryAction.text}</Link>
+            </Button>
+          </motion.div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
