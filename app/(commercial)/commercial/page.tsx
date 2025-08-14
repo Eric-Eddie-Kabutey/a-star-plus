@@ -1,6 +1,4 @@
 import { Hero } from "@/components/commercial/hero/hero";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { VersatileHeroData } from "@/types/com/hero";
 import { Service } from "@/components/commercial/home/service";
 import { commercialPestControlMattersData } from "@/lib/data/com/service";
@@ -8,6 +6,8 @@ import { ApproachData, BusinessProtectionData, IndustrySolutionsData } from "@/t
 import { IndustrySolutions } from "@/components/commercial/home/industry-solution";
 import { Approach } from "@/components/commercial/home/approach";
 import { BusinessProtection } from "@/components/commercial/home/business-protection";
+import { Testimonials } from "@/components/shared/testimonials";
+import { Faq } from "@/components/shared/faq";
 
 // data for hero section
 const heroData: VersatileHeroData = {
@@ -17,7 +17,7 @@ const heroData: VersatileHeroData = {
     </>
   ),
   description: 'Protect your property, customers, and reputation with expert pest solutions tailored for commercial spaces.',
-  actions: "Get a Free Inspection",
+  actions: ['Get a Free Inspection'],
   imageUrl: '/assets/com/images/hero-side.png',
   imageAlt: 'Technician in blue gloves holding a pest control spray bottle.',
   features: [
@@ -85,22 +85,15 @@ const ourApproachData: ApproachData = {
   steps: [
     {
       title: 'Site Evaluation',
-      items: [
-        'We assess your facility to identify pest entry points, high-risk areas, and compliance risks.',
-      ],
+      image: '/assets/com/images/evaluation.png',      
     },
     {
       title: 'Custom Plan Development',
-      items: [
-        'A solution tailored to your industry and business operations.',
-      ],
+      image: '/assets/com/images/plan.png',      
     },
     {
       title: 'Discreet Implementation',
-      items: [
-        'Treatments delivered safely',
-        'On your schedule with minimal disruption',
-      ],
+      image: '/assets/com/images/implementation.png',      
     },
   ],
   cta: {
@@ -146,15 +139,7 @@ export default function CommercialPage() {
         imageAlt={heroData.imageAlt}
         features={heroData.features}
         cornerBorderPosition={heroData.cornerBorderPosition}
-        />
-        
-         {/* <VersatileHero
-        title={heroData2.title}
-        description={heroData2.description}
-        actions={heroData2.actions}
-        imageUrl={heroData2.imageUrl}
-        imageAlt={heroData2.imageAlt}    
-      /> */}
+        />                 
         
         {/* service  */}
          <Service
@@ -174,7 +159,7 @@ export default function CommercialPage() {
         industries={industrySolutionsData.industries}
         />
         
-        {/* approach */}
+        {/* how it works */}
         <Approach
         tagline={ourApproachData.tagline}
         title={ourApproachData.title}
@@ -184,7 +169,7 @@ export default function CommercialPage() {
         />
         
         {/* business protection */}
-         <BusinessProtection
+         <BusinessProtection 
         tagline={businessProtectionData.tagline}
         title={businessProtectionData.title}
         cta={businessProtectionData.cta}
@@ -193,5 +178,11 @@ export default function CommercialPage() {
         imageUrl={businessProtectionData.imageUrl}
         imageAlt={businessProtectionData.imageAlt}
       />
+
+      {/* Testimonial */}
+      <Testimonials />
+
+      {/* Faq */}
+      <Faq />
     </>)
 }
