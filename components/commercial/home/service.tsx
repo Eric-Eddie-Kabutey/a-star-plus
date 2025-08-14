@@ -52,7 +52,7 @@ export function Service({
       <div className="container mx-auto px-4 z-10">
         {/* Section Header */}
         <motion.div
-          className="text-center max-w-3xl mx-auto mb-12"
+          className="text-center max-w-4xl mx-auto mb-12"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -70,10 +70,11 @@ export function Service({
         </motion.div>
 
         {/* Main Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+          
           {/* Left Side: List of Reasons */}
           <motion.div
-            className="space-y-8"
+            className="space-y-12"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
@@ -81,10 +82,10 @@ export function Service({
           >
             {reasons.map((reason, index) => (
               <motion.div key={index} className="flex items-start gap-4" variants={itemVariants}>
-                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-lg ">                  
-                  <Image src={reason.icon} alt={reason.title} width={100} height={80} className='w-12 h-12' />
+                <div className="flex-shrink-0 flex items-center justify-center w-12 h-12">
+                  <Image src={reason.icon} alt={reason.title} width={38} height={38} />
                 </div>
-                <div>
+                <div className='flex flex-col gap-2'>
                   <h3 className="text-lg font-bold text-gray-800">{reason.title}</h3>
                   <p className="text-gray-600 text-sm">{reason.description}</p>
                 </div>
@@ -94,7 +95,7 @@ export function Service({
 
           {/* Right Side: Image */}
           <motion.div
-            className="relative aspect-[4/5] rounded-2xl shadow-lg overflow-hidden"
+            className="relative h-[350px] rounded-2xl shadow-lg overflow-hidden"
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"
