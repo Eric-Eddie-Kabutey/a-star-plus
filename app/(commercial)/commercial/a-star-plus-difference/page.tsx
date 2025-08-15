@@ -21,7 +21,7 @@ const commercialHeroData: HeroProps = {
   action: ['Schedule Inspection', '(233) 123-456-7890'],
 };
 
-export default function ASartPlusDifferentPage() {
+export default function ASartPlusDifferencePage() {
 	return (
 		<>
             {/* Hero - reusable */}
