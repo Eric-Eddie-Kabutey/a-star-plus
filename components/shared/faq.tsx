@@ -9,7 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { faqItems } from '@/lib/data/residential/faq';
+import { faqItems } from '@/lib/data/shared/faq';
 
 
 const leftColumnVariants: Variants = {

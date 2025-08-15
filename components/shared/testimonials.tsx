@@ -8,7 +8,7 @@ import { Star } from 'lucide-react';
 import { motion, Variants } from '@/components/module/framer-motion'; 
 import { GoogleIcon } from '@/components/icons/google-icon'; 
 import { cn } from '@/lib/utils';
-import { testimonials } from '@/lib/data/residential/testimonials';
+import { testimonials } from '@/lib/data/shared/testimonial';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
