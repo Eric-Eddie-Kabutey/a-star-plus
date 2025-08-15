@@ -88,7 +88,7 @@ export function MainHeader() {
               </SheetTrigger>
               <SheetContent>
                 
-                  <nav className="px-2 mt-8 flex h-full flex-col">
+                  <nav className="px-2 py-4 mt-8 flex h-full flex-col">
                     <Accordion type="single" collapsible className="w-full">
                       {commercialNavigationData.map((item) => item.submenu ? (
                         <AccordionItem value={item.label} key={item.label}>
