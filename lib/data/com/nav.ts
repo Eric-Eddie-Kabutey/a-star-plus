@@ -3,7 +3,7 @@ import { NavigationItem } from "@/types/share/nav";
 // commercial site nav data
 export const commercialNavigationData: NavigationItem[] = [
   {
-    href: '/industries',
+    href: '/commercial/industries',
     label: 'Industries',
     submenu: {
       title: 'Industries',
@@ -37,14 +37,14 @@ export const commercialNavigationData: NavigationItem[] = [
     },
   },
   {
-    href: '/pest-control-service',
+    href: '/commercial/pest-control-service',
     label: 'Pest Control Service',
     submenu: {
       title: 'Pest Control Service',
       columns: [
         {
           links: [
-            { href: '/services/bird-control', label: 'Bird Control' },
+            { href: '/commercial/services/bird-control', label: 'Bird Control' },
             { href: '/services/fly-control', label: 'Fly Control' },
             { href: '/services/rodent-control', label: 'Rodent Control' },
             { href: '/services/mosquito-control', label: 'Mosquito Control' },
@@ -64,7 +64,7 @@ export const commercialNavigationData: NavigationItem[] = [
     },
   },
   {
-    href: '/commercial-service',
+    href: '/commercial/commercial-service',
     label: 'Commercial Service',
     submenu: {
       title: 'Commercial Service',
@@ -82,7 +82,7 @@ export const commercialNavigationData: NavigationItem[] = [
     },
   },
   {
-    href: '/a-star-plus-difference',
+    href: '/commercial/a-star-plus-difference',
     label: 'A Star Plus Difference',
     submenu: {
       title: 'A Star Plus Difference',
