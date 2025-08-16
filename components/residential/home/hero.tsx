@@ -105,9 +105,9 @@ export function Hero() {
           </motion.div>
 
           {/* 4. Premium Badge */}
-          <div className="absolute bottom-8 right-4 sm:right-0 w-20 h-20 md:w-24 md:h-24 hidden sm:block">
+          <div className="absolute bottom-8 right-4 sm:-right-4 w-20 h-20 md:w-24 md:h-24 hidden sm:block">
             <Image
-                src="/assets/icons/premium-badge.png"
+                src="/assets/residential/icons/premium-badge.png"
                 alt="Premium Quality Guaranteed Badge"
                 width={100}
                 height={100}
