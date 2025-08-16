@@ -47,7 +47,7 @@ export function QuoteDialog({
           <div className="grid gap-2">
             <Label htmlFor="service-type">Service Type</Label>
             <Select>
-              <SelectTrigger id="service-type">
+              <SelectTrigger id="service-type" className='w-full'>
                 <SelectValue placeholder="Select service type" />
               </SelectTrigger>
               <SelectContent>
