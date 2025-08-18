@@ -8,6 +8,7 @@ import { documentationAndTrainingData, nationalAccountsData, qaProgramData, spec
 import { contactData } from '@/lib/data/shared/contact'
 import { HeroSection } from '@/components/shared/hero-section'
 import { HeroProps } from '@/types/share/hero'
+import { faqDataAStartPlus } from '@/lib/data/shared/faq'
 
 const commercialHeroData: HeroProps = {
   title: (
@@ -47,7 +48,7 @@ export default function ASartPlusDifferencePage() {
             <Documentation data={documentationAndTrainingData} />
 
 			{/* faq */}
-			<Faq />
+			<Faq title={<>Everything You Need, <br /> to Know</>} faqItems={faqDataAStartPlus} />
 
 			{/* contact  */}
 			{/* Render the BLUE version on another page or section */}

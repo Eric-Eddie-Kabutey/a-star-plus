@@ -156,5 +156,25 @@ export const cricketsFaqData  : FaqProps[] = [
   },
 ]
 
+// faq data for a-star-plus (commercial page)
+export const faqDataAStartPlus: FaqProps[] = [
+  {
+    question: "What's included in a commercial service plan?",
+    answer: "Our commercial plans are customized to your business needs but typically include regular inspections, preventative treatments, monitoring, detailed reporting, emergency response, and staff training. We'll work with you to create a plan that addresses your specific risks and compliance requirements.",
+  },
+  {
+    question: 'Do you service regulated industries like healthcare or food processing?',
+    answer: 'Absolutely. We specialize in highly regulated industries including healthcare facilities, pharmaceutical manufacturing, food processing plants, restaurants, and educational institutions. Our programs are designed to meet or exceed FDA, USDA, AIB, and other regulatory standards.',
+  },
+  {
+    question: 'How fast can I schedule a service visit?',
+    answer: 'For routine services, we can typically schedule within 2-3 business days. Emergency service requests are guaranteed a response within 24 hours, with same-day service available for critical situations that could impact business operations or regulatory compliance.',
+  },
+  {
+    question: 'Are your products safe for staff and customers?',
+    answer: 'Yes, we prioritize the safety of your employees and customers. Our Integrated Pest Management (IPM) approach focuses on prevention first, using the least toxic methods possible. All products we use are EPA-approved and applied by licensed professionals following strict safety protocols.',
+  },
+]
+
 
  
