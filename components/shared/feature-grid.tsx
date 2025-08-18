@@ -89,7 +89,7 @@ export function FeatureGrid({
               {variant === 'circularIcon' && (
                 <div className="flex flex-col items-center text-center p-4">
                   <div className={cn( "flex items-center justify-center  mb-4", iconBorder ? " w-20 h-20 rounded-full border-2 border-red-600 " : "")}>                    
-                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-10 h-auto' />
+                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-10 md:w-15 h-auto' />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{item.description}</p>
