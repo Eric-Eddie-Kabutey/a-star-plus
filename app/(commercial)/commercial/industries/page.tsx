@@ -2,7 +2,9 @@ import { Hero } from "@/components/commercial/hero/hero";
 import { CommercialApproach } from "@/components/commercial/industries/commercial-approach";
 import { IndustryProtectionS } from "@/components/commercial/industries/industry-protections";
 import { TrustFeatures } from "@/components/commercial/industries/trust-features";
+import { Contact } from "@/components/shared/contact";
 import { Testimonials } from "@/components/shared/testimonials";
+import { industriesContactData } from "@/lib/data/shared/contact";
 import { VersatileHeroData } from "@/types/com/hero";
 import { CommercialApproachData, IndustryProtectionData, TrustFeaturesData } from "@/types/com/service";
 
@@ -205,7 +207,16 @@ export default function IndustryPage() {
         <CommercialApproach data={commercialApproachData} />
 
         {/* Testimonial */}
-        <Testimonials />       
+      <Testimonials />      
+      
+      {/* Contact */}
+      <Contact
+              tagline={industriesContactData.tagline}
+              title={industriesContactData.title}
+              description={industriesContactData.description}
+              contactDetails={industriesContactData.contactDetails}
+              variant='blue'
+            />
         
     </>)
 }
