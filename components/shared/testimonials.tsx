@@ -61,10 +61,10 @@ export function Testimonials() {
       >
         {/* 4. Animate the Section Header */}
         <motion.div className="text-center" variants={itemVariants}>
-          <h2 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+          <h2 className="text-3xl font-bold tracking-wide leading-10 text-gray-900 sm:text-4xl">
             Client&apos;s Testimonials
           </h2>
-          <p className="mt-4 text-lg leading-8 text-gray-600">
+          <p className="mt-4 text-lg leading-8 text-gray-700">
             Here are some of our client&apos;s review
           </p>
         </motion.div>
