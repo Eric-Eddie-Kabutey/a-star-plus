@@ -93,13 +93,13 @@ export function ControlProcess({
             <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
               {tagline}
             </p>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-wide leading-10 text-gray-900 mb-8">
               {title}
             </h2>
             
             {/* The Step-by-Step List */}
             <motion.div 
-              className="space-y-0" // Use space-y-0 because margin/padding is handled inside
+              className="bg-[#FDF5F7] max-w-[486px] p-2 rounded-lg" // Use space-y-0 because margin/padding is handled inside
               variants={listContainerVariants}
             >
               {steps.map((step, index) => (
