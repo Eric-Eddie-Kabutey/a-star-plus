@@ -59,8 +59,7 @@ export default function HomeServicePage() {
 			/>
 
 			{/* Testimonial */}
-			<Testimonials />
-			<Faq />
+			<Testimonials />			
 		</>
 	)
 }
