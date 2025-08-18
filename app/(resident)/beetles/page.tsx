@@ -9,6 +9,7 @@ import { Testimonials } from '@/components/shared/testimonials'
 import { beetleData, beetleSpeciesData } from '@/lib/data/residential/beetle'
 import { HeroData } from '@/types/residential/hero'
 import { HeroSection } from '@/components/shared/OtherHero'
+import { beetleFaqData } from '@/lib/data/shared/faq'
 
 interface ControlProcessData {
 	tagline: string
@@ -268,7 +269,7 @@ export default function BeetlePage() {
 			/>
 
 			{/* Faq */}
-			<Faq />
+			<Faq title={<>Beetle Control <br /> FAQs</>} faqItems={beetleFaqData} />
 		</>
 	)
 }

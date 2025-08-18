@@ -61,32 +61,32 @@ const bedBugHeroData: HeroData = {
 	),
 	items: [
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: 'Discreet Service',
 			description: 'Unmarked service vehicles for your privacy',
 		},
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: 'Safe Products',
 			description: 'EPA-registered, pet-safe products',
 		},
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: 'Treatment Options',
 			description: 'Heat Treatment or Low-Odor Spray options',
 		},
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: 'Licensed Technicians',
 			description: 'Trained and certified professionals',
 		},
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: 'Affordable Financing',
 			description: 'Financing options available',
 		},
 		{
-			icon: '/assets/icons/checked.png',
+			icon: '/assets/shared/icons/checked.png',
 			title: '100% Guarantee',
 			description: 'Pest Elimination Guarantee',
 		},

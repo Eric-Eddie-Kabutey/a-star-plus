@@ -6,12 +6,13 @@ import { ComparisonTable } from '@/components/residential/centipedes/comparison-
 import { Faq } from '@/components/shared/faq'
 import { Testimonials } from '@/components/shared/testimonials'
 
-import { Button } from '@/components/ui/button'
+
 
 import { beetleData } from '@/lib/data/residential/beetle'
 import { centipedeMillipedeData } from '@/lib/data/residential/centipedes-millipede'
 import { HeroData } from '@/types/residential/hero'
 import { HeroSection } from '@/components/shared/OtherHero'
+import { carpenterAntFaqData } from '@/lib/data/shared/faq'
 
 interface singsProcessData {
 	tagline: string
@@ -284,7 +285,7 @@ export default function CentipedesMillipedesPage() {
 			/>
 
 			{/* Faq */}
-			<Faq />
+			<Faq title={<>FAQs About<br /> Carpenter Ant<br /> Control</>} faqItems={carpenterAntFaqData} />
 		</>
 	)
 }

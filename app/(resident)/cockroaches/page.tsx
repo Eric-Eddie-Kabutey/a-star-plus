@@ -6,7 +6,7 @@ import { FeatureGrid } from '@/components/shared/feature-grid'
 import { Testimonials } from '@/components/shared/testimonials'
 import { Faq } from '@/components/shared/faq'
 
-import { Button } from '@/components/ui/button'
+
 
 import {
 	cockroachData,
@@ -14,6 +14,7 @@ import {
 } from '@/lib/data/residential/cockroaches'
 import { HeroData } from '@/types/residential/hero'
 import { HeroSection } from '@/components/shared/OtherHero'
+import { cockroachesFaqData } from '@/lib/data/shared/faq'
 
 const bedBugHeroData: HeroData = {
   title: (
@@ -247,8 +248,8 @@ export default function CockroachesPage() {
 				variant='card' 
 				cta={roachPreventionTipsData.cta} 
 			/>
-			{/* Faq */}
-			<Faq />
+			{/* Faq*/}
+			<Faq title={<>Your Cockroach Questions, <br /> Answered</>} faqItems={cockroachesFaqData} />
 		</>
 	)
 }

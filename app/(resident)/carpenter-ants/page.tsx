@@ -1,4 +1,4 @@
-import { Hero } from '@/components/shared/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
 import { InfoSection } from '@/components/shared/why'
 import { ControlProcess } from '@/components/shared/control-process'
 import { FeatureGrid } from '@/components/shared/feature-grid'
@@ -6,13 +6,12 @@ import { ComparisonTable } from '@/components/residential/centipedes/comparison-
 import { Testimonials } from '@/components/shared/testimonials'
 import { Faq } from '@/components/shared/faq'
 
-import { Button } from '@/components/ui/button'
 import {
 	antVsTermiteData,
 	carpenterAntData,
 } from '@/lib/data/residential/carpenter-ants'
 import { HeroData } from '@/types/residential/hero'
-import { HeroSection } from '@/components/shared/OtherHero'
+import { carpenterAntFaqData } from '@/lib/data/shared/faq'
 
 const bedBugHeroData: HeroData = {
   title: (
@@ -38,32 +37,32 @@ const signsOfCarpenterAntsData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/carpenter-ants/.png',
+			icon: '/assets/residential/icons/carpenter-ants/frass.png',
 			title: 'Frass (Sawdust)',
 			description: 'Sawdust-like shavings near wooden structures',
 		},
 		{
-			icon: '/assets/icons/carpenter-ants/.png',
+			icon: '/assets/icons/carpenter-ants/unusual-sounds.png',
 			title: 'Unusual Sounds',
 			description: 'Rustling or tapping noises from inside walls',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/.png', // Using a more distinct "winged ant" icon
+			icon: '/assets/residential/icons/carpenter-ants/winged-ants.png',
 			title: 'Winged Ants',
 			description: 'Swarmers appearing in spring or early summer',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/.png',
+			icon: '/assets/residential/icons/carpenter-ants/soft-wood.png',
 			title: 'Soft Wood',
 			description: 'Hollow-sounding or soft wood when tapped',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/.png',
+			icon: '/assets/residential/icons/carpenter-ants/discarded-wings.png',
 			title: 'Discarded Wings',
 			description: 'Wings near windows or baseboards',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/.png',
+			icon: '/assets/residential/icons/carpenter-ants/ant-trails.png',
 			title: 'Ant Trails',
 			description: 'Trails around moisture-damaged wood or trees',
 		},
@@ -119,32 +118,32 @@ const carpenterAntRemovalData = {
 	title: "Texas's Trusted Choice for Carpenter Ant Removal",
 	items: [
 		{
-			icon: '/assets/residential/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/fast-service.png',
 			title: 'Fast Service',
 			description: 'Same-day inspections and treatment',
 		},
 		{
-			icon: '/assets/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/advanced-detection.png',
 			title: 'Advanced Detection',
 			description: 'Tools to find hidden nests',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/safe-solutions.png',
 			title: 'Safe Solutions',
 			description: 'Child-safe and pet-friendly treatments',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/local-experts.png',
 			title: 'Local Experts',
 			description: 'Understanding Texas pest behavior',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/transparent-pricing.png',
 			title: 'Transparent Pricing',
 			description: 'No surprise fees',
 		},
 		{
-			icon: '/assets/residential/icons/carpenter-ants/__.png',
+			icon: '/assets/residential/icons/carpenter-ants/guaranteed-results.png',
 			title: 'Guaranteed Results',
 			description: 'Follow-up options available',
 		},
@@ -211,7 +210,7 @@ export default function CarpenterAntsPage() {
 			<Testimonials />
 
 			{/* Faq */}
-			<Faq />
+			<Faq title={<>FAQs About<br /> Carpenter Ant <br />Control </>} faqItems={carpenterAntFaqData} />
 		</>
 	)
 }

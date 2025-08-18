@@ -1,4 +1,4 @@
-import { Hero } from '@/components/shared/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
 import { InfoSection } from '@/components/shared/why'
 import { FeatureGrid } from '@/components/shared/feature-grid'
 import { ControlProcess } from '@/components/shared/control-process'
@@ -8,7 +8,7 @@ import { Faq } from '@/components/shared/faq'
 
 import { cricketInfoData } from '@/lib/data/residential/crickets'
 import { HeroData } from '@/types/residential/hero'
-import { HeroSection } from '@/components/shared/OtherHero'
+import { cricketsFaqData } from '@/lib/data/shared/faq'
 
 const bedBugHeroData: HeroData = {
   title: (
@@ -242,8 +242,8 @@ export default function CricketsPage() {
 			{/* testimonials */}
 			<Testimonials />
 
-			{/* Faq */}
-			<Faq />
+			{/* Faq  */}
+			<Faq title={<>Common Questions About<br /> Crickets</>} faqItems={cricketsFaqData} />
 		</>
 	)
 }
