@@ -83,7 +83,7 @@ export function MainHeader() {
 					{/* Desktop Action Buttons */}
 					<div className='hidden lg:flex items-center space-x-4'>
 						<Link
-							href='#'
+							href='/login'
 							className='text-sm font-medium text-gray-600 hover:text-red-600 transition-colors'>
 							Login
 						</Link>

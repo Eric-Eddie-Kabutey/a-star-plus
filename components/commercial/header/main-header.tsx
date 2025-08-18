@@ -67,7 +67,7 @@ export function MainHeader() {
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="#" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/login" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
               Login
             </Link>
             <button onClick={() => setIsAccountDialogOpen(true)} className="rounded-lg border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-red-50 transition-colors">
