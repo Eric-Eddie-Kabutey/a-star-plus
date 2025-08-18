@@ -11,6 +11,19 @@ import {
 	antVsTermiteData,
 	carpenterAntData,
 } from '@/lib/data/residential/carpenter-ants'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
+
+const bedBugHeroData: HeroData = {
+  title: (
+	<>
+	  Think You Have Carpenter Ants? Act Before They Wreck Your Woodwork.
+	</>
+  ),
+  description: 'We find, treat, and eliminate carpenter ants before they destroy your property — without compromising your safety or comfort.',
+  backgroundImage: '/assets/residential/images/hero-image-flies.jpg', 
+  overlay: 'bg-black/40', 
+};
 
 const signsOfCarpenterAntsData = {
 	tagline: 'WHAT ARE THE SIGNS',
@@ -146,30 +159,7 @@ export default function CarpenterAntsPage() {
 	return (
 		<>
 			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={
-					<>
-						Think You Have Carpenter Ants? Act Before They Wreck Your Woodwork.
-					</>
-				}
-				description='We find, treat, and eliminate carpenter ants before they destroy your property — without compromising your safety or comfort.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			<HeroSection {...bedBugHeroData} />			
 
 			{/* Why centipedes: Image on the RIGHT (default layout) */}
 			<InfoSection

@@ -12,6 +12,19 @@ import {
 	cockroachData,
 	cockroachSpeciesData,
 } from '@/lib/data/residential/cockroaches'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
+
+const bedBugHeroData: HeroData = {
+  title: (
+	<>
+	  Seeing Cockroaches? Let&apos;s Stop the Infestation, Fast.
+	</>
+  ),
+  description: 'We eliminate cockroaches at the source with safe, professional-grade treatments that work and keep them from coming back.',
+  backgroundImage: '/assets/residential/images/hero-image-flies.jpg', 
+  overlay: 'bg-black/40', 
+};
 
 const signsOfRoachesData = {
 	tagline: 'WHAT ARE THE SIGNS',
@@ -169,27 +182,8 @@ const roachPreventionTipsData = {
 export default function CockroachesPage() {
 	return (
 		<>
-			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Seeing Cockroaches? Let&apos;s Stop the Infestation, Fast.</>}
-				description='We eliminate cockroaches at the source with safe, professional-grade treatments that work and keep them from coming back.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			{/* hero - reuseable with props for specific page */}			
+			<HeroSection {...bedBugHeroData} />
 
 			{/* Why centipedes: Image on the RIGHT (default layout) */}
 			<InfoSection

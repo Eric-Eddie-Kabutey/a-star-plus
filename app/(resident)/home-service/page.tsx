@@ -1,6 +1,4 @@
-import { Button } from '@/components/ui/button'
-
-import { Hero } from '@/components/shared/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
 import { Overview } from '@/components/residential/home-service/overview'
 import { InfoPackage } from '@/components/residential/home-service/info-package'
 import { ComprehensiveServices } from '@/components/residential/home-service/comprehensive-service'
@@ -14,31 +12,20 @@ import {
 	homeServiceOverviewData,
 	newHomeownerPackageData,
 } from '@/lib/data/residential/homer-sevice'
+import { HeroData } from '@/types/residential/hero'
+
+const bedBugHeroData: HeroData = {
+	title: <>Complete Home Protection Solutions</>,
+	description: "More than pest control, we safeguard your home's comfort, efficiency, and structural integrity.",
+	backgroundImage: '/assets/residential/images/hero-image-flies.jpg',
+	overlay: 'bg-black/40',
+}
 
 export default function HomeServicePage() {
 	return (
 		<>
 			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Complete Home Protection Solutions</>}
-				description="More than pest control, we safeguard your home's comfort, efficiency, and structural integrity."
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			<HeroSection {...bedBugHeroData} />				
 
 			<Overview
 				tagline={homeServiceOverviewData.tagline}

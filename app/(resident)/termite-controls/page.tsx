@@ -14,6 +14,15 @@ import { ComparisonTable } from '@/components/residential/centipedes/comparison-
 import { FeatureGrid } from '@/components/shared/feature-grid'
 import { CommonPestsSection } from '@/components/residential/ants/common-ant-species'
 import { NumberedSteps } from '@/components/residential/termite/number-of-steps'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
+
+const bedBugHeroData: HeroData = {
+	title: <>Stop the Silent Damage Before It Starts</>,
+	description: 'Termites cause more damage to homes annually than storms and fires combined — and most of the time, it happens without you even noticing. At A Star Plus Pest Control, we specialize in detection, elimination, and prevention of all termite species.',
+	backgroundImage: '/assets/residential/images/hero-image-flies.jpg',
+	overlay: 'bg-black/40',
+}
 
 const termitePreventionTipsData: FeatureGridData = {
 	tagline: 'PREVENTION TIPS',
@@ -57,26 +66,7 @@ export default function TermiteControlsPage() {
 	return (
 		<>
 			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Stop the Silent Damage Before It Starts</>}
-				description='Termites cause more damage to homes annually than storms and fires combined — and most of the time, it happens without you even noticing. At A Star Plus Pest Control, we specialize in detection, elimination, and prevention of all termite species.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			<HeroSection {...bedBugHeroData} />			
 
 			<FeatureGridBanner
 				tagline={termiteTreatmentData.tagline}

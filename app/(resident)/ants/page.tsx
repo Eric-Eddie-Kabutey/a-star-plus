@@ -6,7 +6,7 @@ import { FeatureGrid } from '@/components/shared/feature-grid'
 import { Testimonials } from '@/components/shared/testimonials'
 import { Faq } from '@/components/shared/faq'
 
-import { AntBackground } from '@/components/residential/ants/ant-background'
+import { DesktopAntBackground } from '@/components/residential/ants/ant-background'
 import { antData, antSpeciesData } from '@/lib/data/residential/ants'
 import { Button } from '@/components/ui/button'
 
@@ -135,7 +135,7 @@ export default function AntsPage() {
 					</>
 				}
 				description='We eliminate ants at the source, fast, safe, and with a satisfaction guarantee.'
-				background={<AntBackground />}
+				background={<DesktopAntBackground />}
 				backgroundColor='#fff0f0'				
 			/>
 			{/* why (reusable) ants treatments are serious issues */}
@@ -179,6 +179,7 @@ export default function AntsPage() {
 				description={whyUsData.description}
 				items={whyUsData.items}
 				variant='circularIcon'
+				iconBorder={true}
 			/>
 
 			{/* testimonials */}

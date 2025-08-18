@@ -1,4 +1,4 @@
-import { Hero } from '@/components/shared/hero'
+
 import { InfoSection } from '@/components/shared/why'
 import { CommonPestsSection } from '@/components/residential/ants/common-ant-species'
 import { FeatureGrid } from '@/components/shared/feature-grid'
@@ -6,8 +6,9 @@ import { ControlProcess } from '@/components/shared/control-process'
 import { Faq } from '@/components/shared/faq'
 import { Testimonials } from '@/components/shared/testimonials'
 
-import { Button } from '@/components/ui/button'
 import { beetleData, beetleSpeciesData } from '@/lib/data/residential/beetle'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
 
 interface ControlProcessData {
 	tagline: string
@@ -19,6 +20,18 @@ interface ControlProcessData {
 		description: string
 	}[]
 }
+
+const bedBugHeroData: HeroData = {
+  title: (
+	<>
+	  Stop Beetles Before They Wreck Your Property
+	</>
+  ),
+  description: 'Protect your home or business from fabric, wood, and food destroying beetles with expert pest control that works, guaranteed.',
+  backgroundImage: '/assets/residential/images/hero-image-cricket.jpg', 
+  overlay: 'bg-black/40', 
+};
+
 
 const beetleControlProcessData: ControlProcessData = {
 	tagline: 'OUR CONTROL PROCESS',
@@ -190,27 +203,8 @@ const beetlePreventionTipsData = {
 export default function BeetlePage() {
 	return (
 		<>
-			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Stop Beetles Before They Wreck Your Property.</>}
-				description='Protect your home or business from fabric, wood, and food destroying beetles with expert pest control that works, guaranteed.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			<HeroSection {...bedBugHeroData} />
+			{/* hero - reuseable with props for specific page */}			
 
 			{/* Example 1: Image on the RIGHT (default layout) */}
 			<InfoSection

@@ -1,8 +1,15 @@
+import { HeroSection } from '@/components/shared/OtherHero'
 import { FeatureGrid } from '@/components/shared/feature-grid'
-import { Hero } from '@/components/shared/hero'
-import { Button } from '@/components/ui/button'
 import { InfoSection } from '@/components/residential/termite/info-section'
 import { termiteControlData, tickControlData } from '@/lib/data/residential/termite-control'
+import { HeroData } from '@/types/residential/hero'
+
+const bedBugHeroData: HeroData = {
+	title: <>Protecting Your Property from Hard-to-Detect Threats</>,
+	description: 'Some pests don’t bite, they break down your home’s foundation or latch onto your skin unnoticed. Termites and ticks are small but serious, and A Star Plus Pest Control delivers reliable solutions for both.',
+	backgroundImage: '/assets/residential/images/hero-image-flies.jpg',
+	overlay: 'bg-black/40',
+}
 
 const expertTrustData = {
 	tagline: 'WHY US',
@@ -55,27 +62,8 @@ export default function MothsPage() {
 	return (
 		<>
 			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Protecting Your Property from Hard-to-Detect Threats</>}
-				description='Some pests don’t bite, they break down your home’s foundation or latch onto your skin unnoticed. Termites and ticks are small but serious, and A Star Plus Pest Control delivers reliable solutions for both.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
-
+			<HeroSection {...bedBugHeroData} />
+			
 			{/* Why centipedes: Image on the RIGHT (default layout) */}
 			<InfoSection
 				tagline={termiteControlData.tagline}

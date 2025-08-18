@@ -7,7 +7,19 @@ import { Testimonials } from '@/components/shared/testimonials'
 import { Faq } from '@/components/shared/faq'
 
 import { cricketInfoData } from '@/lib/data/residential/crickets'
-import { Button } from '@/components/ui/button'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
+
+const bedBugHeroData: HeroData = {
+  title: (
+	<>
+	  Constant Chirping? Crickets Might Be Invading Your Home.
+	</>
+  ),
+  description: 'Our expert team identifies, controls, and eliminates cricket infestations — fast, safe, and guaranteed in homes and businesses across Texas.',
+  backgroundImage: '/assets/residential/images/hero-image-cricket.jpg', 
+  overlay: 'bg-black/40', 
+};
 
 const signsOfCricketsData = {
 	tagline: 'WHAT ARE THE SIGNS',
@@ -174,26 +186,7 @@ export default function CricketsPage() {
 	return (
 		<>
 			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={<>Constant Chirping? Crickets Might Be Invading Your Home.</>}
-				description='Our expert team identifies, controls, and eliminates cricket infestations — fast, safe, and guaranteed in homes and businesses across Texas.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
+			<HeroSection {...bedBugHeroData} />			
 
 			{/* Why centipedes: Image on the RIGHT (default layout) */}
 			<InfoSection

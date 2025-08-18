@@ -10,6 +10,8 @@ import { Button } from '@/components/ui/button'
 
 import { beetleData } from '@/lib/data/residential/beetle'
 import { centipedeMillipedeData } from '@/lib/data/residential/centipedes-millipede'
+import { HeroData } from '@/types/residential/hero'
+import { HeroSection } from '@/components/shared/OtherHero'
 
 interface singsProcessData {
 	tagline: string
@@ -21,6 +23,17 @@ interface singsProcessData {
 		description: string
 	}[]
 }
+
+const bedBugHeroData: HeroData = {
+  title: (
+	<>
+	  Creepy Crawlers in Your Home? We Get Rid of Centipedes & Millipedes, For Good.
+	</>
+  ),
+  description: 'Our targeted treatments eliminate infestations and prevent future intrusions, fast, safe, and backed by our satisfaction guarantee.',
+  backgroundImage: '/assets/residential/images/hero-image-centipedes-millipedes.jpg', 
+  overlay: 'bg-black/40', 
+};
 
 const signsOfCentipedesData: singsProcessData = {
 	tagline: 'WHAT ARE THE SIGNS',
@@ -208,33 +221,8 @@ const centipedePreventionTipsData = {
 export default function CentipedesMillipedesPage() {
 	return (
 		<>
-			{/* hero - reuseable with props for specific page */}
-			<Hero
-				title={
-					<>
-						Sleepless Nights? Get Ride of
-						<br /> Bed Bug Fast, Guaranteed.
-					</>
-				}
-				description='We eliminate ants at the source, fast, safe, and with a satisfaction guarantee.'
-				backgroundColor='#fff0f0'
-				buttons={
-					<div className='flex flex-col md:flex-row items-center justify-center gap-4 w-full max-w-xs mx-auto'>
-						<Button
-							size='lg'
-							className='w-full bg-red-600 hover:bg-red-700 text-lg py-6'>
-							Book a Free Ant Inspection
-						</Button>
-						<Button
-							size='lg'
-							variant='outline'
-							className='w-full border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-6'>
-							Call Now: (123) 456-7890
-						</Button>
-					</div>
-				}
-			/>
-
+			<HeroSection {...bedBugHeroData} />
+			{/* hero - reuseable with props for specific page */}			
 			{/* Why centipedes: Image on the RIGHT (default layout) */}
 			<InfoSection
 				tagline={beetleData.tagline}
