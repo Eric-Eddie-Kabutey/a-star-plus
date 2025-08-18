@@ -17,7 +17,7 @@ const commercialHeroData: HeroProps = {
     </>
   ),
   description: 'Elevate pest control into a strategic asset for your business with our rigorous standards, smart tools, and highly trained team.',
-  backgroundImage: '/assets/com/images/commercial-service-hero.png', 
+  backgroundImage: '/assets/com/images/commercial-service-hero.jpg', 
   overlay: 'bg-black/60', // A slightly darker overlay
   action: ['Schedule Inspection', '(233) 123-456-7890'],
 };
@@ -48,7 +48,7 @@ export default function ASartPlusDifferencePage() {
             <Documentation data={documentationAndTrainingData} />
 
 			{/* faq */}
-			<Faq title={<>Everything You Need, <br /> to Know</>} faqItems={faqDataAStartPlus} />
+			<Faq title={<>Commercial Pest <br /> Control FAQ</>} faqItems={faqDataAStartPlus} />
 
 			{/* contact  */}
 			{/* Render the BLUE version on another page or section */}

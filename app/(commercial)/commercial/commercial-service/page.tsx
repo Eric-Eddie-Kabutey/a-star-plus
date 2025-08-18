@@ -65,7 +65,7 @@ const commercialHeroData: HeroProps = {
     </>
   ),
   description: 'Beyond pest control, A Star Plus offers advanced facility services that elevate cleanliness, enhance sanitation, and safeguard your operations. These services help businesses meet strict health codes and deliver a positive experience for employees and customers.',
-  backgroundImage: '/assets/com/images/commercial-service-hero.png', 
+  backgroundImage: '/assets/com/images/commercial-service-hero.jpg', 
   overlay: 'bg-black/60', // A slightly darker overlay
   action: ['Schedule Inspection', '(233) 123-456-7890'],
 };

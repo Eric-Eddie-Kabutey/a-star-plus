@@ -22,8 +22,8 @@ const commercialHeroData: HeroProps = {
 	</>
   ),
   description: 'At A Star Plus, we offer specialized, industry-compliant pest control solutions to ensure your commercial spaces stay safe, sanitary, and pest-free.',
-  backgroundImage: '/assets/com/images/commercial-service-hero.png', 
-  overlay: 'bg-black/60', // A slightly darker overlay
+  backgroundImage: '/assets/com/images/pest-control-service-hero.jpg', 
+  overlay: 'bg-black/50', // A slightly darker overlay
   action: ['Schedule Inspection', '(233) 123-456-7890'],
 };
 
