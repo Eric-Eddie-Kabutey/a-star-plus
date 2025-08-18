@@ -8,6 +8,7 @@ import { Approach } from "@/components/commercial/home/approach";
 import { BusinessProtection } from "@/components/commercial/home/business-protection";
 import { Testimonials } from "@/components/shared/testimonials";
 import { Faq } from "@/components/shared/faq";
+import { faqItems } from "@/lib/data/shared/faq";
 
 // data for hero section
 const heroData: VersatileHeroData = {
@@ -183,6 +184,6 @@ export default function CommercialPage() {
       <Testimonials />
 
       {/* Faq */}
-      <Faq />
+      <Faq title={<>Everything You Need<br /> to Know</>} hint="All Questions" faqItems={faqItems} />
     </>)
 }
