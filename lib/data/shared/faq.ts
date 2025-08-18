@@ -44,3 +44,117 @@ export const antFaqData: FaqProps[] = [
     answer: 'Costs vary based on property size and infestation severity. We provide free inspections and upfront pricing with no hidden fees.',
   },
 ]
+
+export const bedBugFaqData: FaqProps[] = [
+  {
+    question: 'Are your treatments safe for kids and pets?',
+    answer: 'Yes, we use EPA-registered products that are safe for children and pets when applied by our licensed professionals. We’ll provide specific instructions for preparation and re-entry times.',
+  },
+  {
+    question: 'Do I need to leave the house during treatment?',
+    answer: 'For most treatments, you’ll need to vacate for 2-4 hours. Heat treatments may require longer absence. We’ll provide detailed instructions based on your specific treatment plan.',
+  },
+  {
+    question: 'How soon can I return to my bed after treatment?',
+    answer: 'Typically, you can return to treated areas after 2-4 hours, once the products have dried. We’ll provide specific timing based on the treatment method used.',
+  },
+  {
+    question: 'Will the bed bugs spread to other rooms?',
+    answer: 'Our comprehensive treatment includes inspection of adjacent areas and preventive treatment to contain the infestation and prevent spreading.',
+  },
+  {
+    question: 'What if I still see bugs after treatment?',
+    answer: 'Some activity is normal for 1-2 weeks as bugs emerge from deep hiding spots and encounter treated areas. We include follow-up visits to monitor and retreat if necessary.',
+  },
+]
+
+// Faq data for beetle
+export const beetleFaqData: FaqProps[] = [
+  {
+    question: 'What makes beetles different from termites?',
+    answer: 'While both can damage wood, beetles typically create small, round holes and leave powdery residue, while termites create mud tubes and prefer softer wood. Beetles also have a wider diet, affecting fabrics and stored food products.',
+  },
+  {
+    question: 'Can I treat beetles with over-the-counter sprays?',
+    answer: 'Over-the-counter treatments often only address surface beetles and may not reach larvae hidden deep in wood or fabric. Professional treatments are more thorough and include prevention strategies.',
+  },
+  {
+    question: 'How long does treatment take?',
+    answer: 'Treatment time varies based on infestation severity and property size. Most residential treatments take 2-4 hours, while commercial properties may require multiple visits.',
+  },
+  {
+    question: 'Are your treatments safe for food storage areas?',
+    answer: 'Yes, we use food-safe treatments in kitchen and pantry areas. We’ll provide specific instructions for food storage during and after treatment.',
+  },
+  {
+    question: 'Do beetles come back after treatment?',
+    answer: 'Our treatments include preventive measures and follow-up monitoring. We also provide a guarantee and will retreat if beetles return within the warranty period.',
+  },
+]
+
+// data for centipedes and millipedes data
+export const cockroachesFaqData: FaqProps[] = [
+  {
+    question: 'What attracts roaches to my home?',
+    answer: 'Roaches are attracted to food, water, and shelter. Common attractants include crumbs, pet food, standing water, and warm hiding places.',
+  },
+  {
+    question: 'Can I do it myself?',
+    answer: 'While DIY products exist, professional treatments are more effective for severe infestations and provide longer-lasting results.',
+  },
+  {
+    question: 'Are the treatments safe for kids and pets?',
+    answer: 'Yes, we use EPA-approved treatments that are safe when applied by professionals. We’ll provide specific safety instructions for your situation.',
+  },
+  {
+    question: 'How often should I schedule professional treatment?',
+    answer: 'For prevention, quarterly treatments are recommended. For active infestations, we may recommend monthly visits initially.',
+  },
+  {
+    question: 'How long until I see results?',
+    answer: 'Most customers see a significant reduction in roach activity within 24-48 hours, with complete elimination typically within 1-2 weeks.',
+  },
+]
+
+// faq data for carpenter ant
+export const carpenterAntFaqData: FaqProps[] = [
+  {
+    question: 'Are carpenter ants as destructive as termites?',
+    answer: 'While carpenter ants don’t eat wood like termites, they can cause significant structural damage by tunneling through it to create nests. Both require professional treatment to prevent costly repairs.',
+  },
+  {
+    question: 'What attracts carpenter ants to my home?',
+    answer: 'Carpenter ants are attracted to moisture-damaged wood, leaky pipes, poor ventilation, and wood-to-soil contact. They seek out soft, damp wood for nesting.',
+  },
+  {
+    question: 'Will they come back after treatment?',
+    answer: 'Our comprehensive treatment targets the entire colony, including satellite nests. With proper treatment and optional maintenance plans, reinfestation is highly unlikely.',
+  },
+  {
+    question: 'Is your treatment safe for pets and kids?',
+    answer: 'Yes, we use targeted, low-toxicity treatments that are safe for families and pets when applied by our certified professionals.',
+  },
+]
+
+// faq data for cricket
+export const cricketsFaqData  : FaqProps[] = [
+  {
+    question: 'Why are crickets so loud at night?',
+    answer: "Male crickets chirp to attract mates, and they're most active at night when temperatures cool down. The sound can seem amplified indoors due to acoustics.",
+  },
+  {
+    question: 'Can they survive indoors all year?',
+    answer: 'Yes, crickets can complete their life cycle indoors if they find adequate food, water, and shelter. This is why professional treatment is important.',
+  },
+  {
+    question: 'Are crickets dangerous to my health?',
+    answer: "Crickets aren't directly dangerous, but they can damage property and attract other pests. Their droppings can also cause allergic reactions in sensitive individuals.",
+  },
+  {
+    question: 'Do I need regular treatment or just one visit?',
+    answer: 'It depends on the severity and your specific situation. We offer both one-time treatments and seasonal prevention plans to keep crickets from returning.',
+  },
+]
+
+
+ 
