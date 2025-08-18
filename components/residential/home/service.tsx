@@ -47,15 +47,15 @@ export function Services() {
         {/* Section Header */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-2">          
           <motion.div
-            className="lg:max-w-md"
+            className="flex flex-col gap-2"
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
             variants={headerLeftVariants}
           >
             <p className="text-base font-semibold leading-7 text-red-600">Our Services</p>
-            <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Tailored Pest Control Solutions For Every Needs
+            <h2 className="mt-2 text-3xl font-bold tracking-wide leading-10 text-gray-900 sm:text-4xl">
+              Tailored Pest Control <br /> Solutions For Every Needs
             </h2>
           </motion.div>
           
