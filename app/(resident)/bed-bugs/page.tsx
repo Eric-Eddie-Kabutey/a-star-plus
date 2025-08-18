@@ -8,6 +8,7 @@ import { antData, bedBugData } from '@/lib/data/residential/ants'
 import { HeroData } from '@/types/residential/hero'
 
 import { HeroSection } from '@/components/shared/OtherHero'
+import { bedBugFaqData } from '@/lib/data/shared/faq'
 
 
 const bedBugHeroData: HeroData = {
@@ -68,28 +69,28 @@ const signsOfBedBugsData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/beetle/bite-patterns.png',
+			icon: '/assets/residential/icons/bed-bug/bite-patterns.png',
 			title: 'Bite Patterns',
 			description: 'Red, itchy bites in a straight line or zigzag pattern',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/blood-stains.png',
+			icon: '/assets/residential/icons/bed-bug/blood-stains.png',
 			title: 'Blood Stains',
 			description: 'Small blood stains on sheets or pillows',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/facial-spots.png',
+			icon: '/assets/residential/icons/bed-bug/facial-spots.png',
 			title: 'Fecal Spots',
 			description: 'Dark faecal spots on mattress seams or furniture',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/live-evidence.png',
+			icon: '/assets/residential/icons/bed-bug/live-evidence.png',
 			title: 'Live Evidence',
 			description:
 				'Live bugs or molted skins in cracks, baseboards, or mattress folds',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/mostly-odour.png',
+			icon: '/assets/residential/icons/bed-bug/mostly-odour.png',
 			title: 'Musty Odour',
 			description: 'Sweet, musty odor in heavily infested rooms',
 		},
@@ -146,18 +147,9 @@ const whyChooseUsData = {
 export default function BedBug() {
 	return (
 		<>
-			<HeroSection {...bedBugHeroData} />
 			{/* hero - reuseable with props for specific page */}
-			{/* <Hero
-				title={
-					<>
-						Sleepless Nights? Get Ride of Bed Bug Fast, Guaranteed.
-					</>
-				}
-				description='We eliminate ants at the source, fast, safe, and with a satisfaction guarantee.'
-				backgroundColor='#fff0f0'
-				
-			/> */}
+			<HeroSection {...bedBugHeroData} />
+			
 
 			{/* Example 1: Image on the RIGHT (default layout) */}
 			<InfoSection
@@ -210,11 +202,15 @@ export default function BedBug() {
 				cta={whyChooseUsData.cta}
 			/>
 
-			{/* testimonials */}
+			{/* testimonials Bed Bugs Control 
+ */}
 			<Testimonials />
 
 			{/* Faq */}
-			<Faq />
+			<Faq
+				title={<>Bed Bugs Control <br /> FAQs</>}							
+				faqItems={bedBugFaqData}
+			/>
 		</>
 	)
 }
