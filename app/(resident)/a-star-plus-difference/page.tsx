@@ -8,6 +8,7 @@ import { contactData } from '@/lib/data/residential/homer-sevice'
 import { whyChooseUsDetailedData } from '@/lib/data/residential/why-choose-us'
 import { redCtaData } from '@/lib/data/shared/cta'
 import { HeroData } from '@/types/residential/hero'
+import { faqItems } from '@/lib/data/shared/faq'
 
 const bedBugHeroData: HeroData = {
 	title: <>The A Star Plus Difference</>,
@@ -34,7 +35,10 @@ export default function AStarPlusDifferentPage() {
 			<Testimonials />
 
 			{/* Faq */}
-			<Faq />
+			<Faq
+				title={<>Bed Bugs Control <br /> FAQs</>}							
+				faqItems={faqItems}
+			/>
 
 			{/*CTA: Ready to Experience the A Star Plus Difference? */}			
 
