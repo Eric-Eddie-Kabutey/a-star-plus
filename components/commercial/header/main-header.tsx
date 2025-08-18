@@ -41,7 +41,7 @@ export function MainHeader() {
         <div className="container mx-auto flex h-20 items-center justify-between px-4">
           {/* Logo */}
           <Link href="/commercial">
-            <Image src="/assets/shared/logos/logo.png" alt="Logo" width={100} height={100} className='h-12 w-auto md:w-20 md:h-20' />
+            <Image src="/assets/shared/logos/logo.png" alt="Logo" width={100} height={100} className='h-14 w-auto md:h-16 lg:h-20' />
           </Link>
 
           {/* Desktop Navigation */}

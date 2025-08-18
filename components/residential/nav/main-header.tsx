@@ -54,7 +54,7 @@ export function MainHeader() {
 							alt='Logo'
 							width={110}
 							height={32}
-							className='h-12 w-auto'
+							className='h-14 w-auto md:h-16 lg:h-20'
 						/>
 					</Link>
 
