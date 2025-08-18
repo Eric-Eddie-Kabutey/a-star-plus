@@ -55,12 +55,12 @@ export function FeatureGrid({
 
   return (
     <section className="py-16 md:py-24" style={{ backgroundColor: '#fdf8f8' }}>
-      <div className="container px-4">        
-        <div className="text-center max-w-3xl mx-auto mb-12">
+      <div className="container mx-auto px-4">        
+        <div className="text-center mb-12 max-w-xl mx-auto flex flex-col gap-2">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
             {tagline}
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-wide leading-10 text-gray-900">
             {title}
           </h2>
           {description && (
