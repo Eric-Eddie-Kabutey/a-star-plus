@@ -52,13 +52,13 @@ export function WhyChooseUs() {
             viewport={{ once: true, amount: 0.3 }}
             variants={leftColumnVariants}
           >
-            <motion.h2 variants={itemVariants} className="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
-              Pest Eliminated, Experience and Happy Customers.
+            <motion.h2 variants={itemVariants} className=" text-3xl font-bold tracking-wide leading-10 text-gray-900 sm:text-4xl">
+              Pest Eliminated, <br /> Experience and Happy <br /> Customers.
             </motion.h2>
             <motion.div variants={itemVariants} className="mt-8 flex items-center space-x-4">
-              <Image src="/assets/images/happy-customer-1.png" alt="Happy customer" width={120} height={120} className="rounded-lg shadow-md border-2 border-red-300" />
-              <Image src="/assets/images/happy-customer-2.png" alt="Happy customers" width={160} height={120} className="rounded-lg shadow-md border-2 border-red-300" />
-              <Image src="/assets/images/happy-customer-3.png" alt="Happy customer" width={120} height={120} className="rounded-lg shadow-md border-2 border-red-300 hidden sm:block" />
+              <Image src="/assets/residential/images/happy-customer-1.png" alt="Happy customer" width={120} height={120} className="rounded-lg shadow-md border-2 border-red-300" />
+              <Image src="/assets/residential/images/happy-customer-2.png" alt="Happy customers" width={160} height={120} className="rounded-lg shadow-md border-2 border-red-300" />
+              <Image src="/assets/residential/images/happy-customer-3.png" alt="Happy customer" width={120} height={120} className="rounded-lg shadow-md border-2 border-red-300 hidden sm:block" />
             </motion.div>
           </motion.div>
           

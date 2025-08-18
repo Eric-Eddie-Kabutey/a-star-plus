@@ -66,7 +66,7 @@ export function Services() {
             viewport={{ once: true, amount: 0.3 }}
             variants={headerRightVariants}
           >
-            <p className="text-lg leading-8 text-gray-600">
+            <p className="text-lg leading-8 text-gray-900">
               Whether you need preventive treatments or urgent pest removal, A star Plus pest control has got you covered. Protect your property today with our trusted pest control solutions!
             </p>
             <div className="mt-6">

@@ -37,7 +37,7 @@ export function Faq() {
           >
             <div>
               <p className="text-base font-semibold leading-7 text-red-600">FAQ</p>
-              <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+              <h2 className="max-w-[457px] mt-2 text-3xl font-bold tracking-wide leading-10 text-gray-900 sm:text-4xl">
                 Everything You Need to Know
               </h2>
               <div className="mt-10">

@@ -50,10 +50,10 @@ export function AboutUs() {
             <motion.p variants={itemVariants} className="text-base font-semibold leading-7 text-red-600">
               About Us
             </motion.p>
-            <motion.h2 variants={itemVariants} className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+            <motion.h2 variants={itemVariants} className="max-w-[472px] leading-10 mt-2  text-3xl font-bold tracking-wide text-gray-900 sm:text-4xl">
               Say Goodbye to Pests For Good
             </motion.h2>
-            <motion.div variants={itemVariants} className="mt-8 space-y-6 text-lg text-gray-600">
+            <motion.div variants={itemVariants} className="mt-8 space-y-6 text-lg text-gray-900">
               <p>
                 At A Star Plus Pest Control, we&apos;re more than just exterminators — we&apos;re your neighbors, and we&apos;re committed to protecting your home like it&apos;s our own.
               </p>
@@ -77,7 +77,7 @@ export function AboutUs() {
             variants={imageVariants}
           >
             <Image
-              src="/assets/images/pets-control-technician.png" 
+              src="/assets/residential/images/pets-control-technician.png" 
               alt="A pest control technician in a protective suit holding a sprayer"
               width={600}
               height={750}
