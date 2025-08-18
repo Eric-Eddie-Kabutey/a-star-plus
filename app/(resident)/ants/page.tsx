@@ -8,7 +8,7 @@ import { Faq } from '@/components/shared/faq'
 
 import { DesktopAntBackground } from '@/components/residential/ants/ant-background'
 import { antData, antSpeciesData } from '@/lib/data/residential/ants'
-import { Button } from '@/components/ui/button'
+import { antFaqData } from '@/lib/data/shared/faq'
 
 // --- Data for the first section ("Why Us") ---
 const whyUsData = {
@@ -195,7 +195,7 @@ export default function AntsPage() {
 			/>
 
 			{/* FAQ */}
-			<Faq />
+			<Faq title={<>Ant Control <br /> FAQs</>} faqItems={antFaqData} />
 		</>
 	)
 }
