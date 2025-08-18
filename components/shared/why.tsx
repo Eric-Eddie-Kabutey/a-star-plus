@@ -62,7 +62,7 @@ export function InfoSection({
       whileInView="visible"
       viewport={{ once: true, amount: 0.3 }}
     >
-      <div className="container mx-auto px-4">
+      <div className="container   mx-auto px-4">
         {/* Responsive grid: stacks on mobile, two columns on large screens */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           
@@ -70,7 +70,7 @@ export function InfoSection({
           <motion.div
             // Use 'cn' to conditionally apply the order class based on layout
             className={cn(
-              'border-4 border-blue-500 p-8 rounded-lg',
+              ' flex flex-col gap-2 md:gap-4',
               layout === 'imageRight' ? 'lg:order-1' : 'lg:order-2'
             )}
             variants={layout === 'imageRight' ? slideInFromLeft : slideInFromRight}
@@ -78,7 +78,7 @@ export function InfoSection({
             <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
               {tagline}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h2 className="max-w-[457px] text-3xl md:text-4xl tracking-wide leading-10 font-bold text-gray-900 mb-4">
               {title}
             </h2>
             <p className="text-gray-600 mb-6">
@@ -86,7 +86,7 @@ export function InfoSection({
             </p>
             <div>
               <h3 className="font-bold text-gray-800 mb-2">Quick Facts:</h3>
-              <ul className="list-disc list-inside space-y-2 text-gray-600">
+              <ul className="list-disc list-inside space-y-2 pl-4 text-gray-600">
                 {quickFacts.map((fact, index) => (
                   <li key={index}>{fact}</li>
                 ))}
