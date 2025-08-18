@@ -5,6 +5,7 @@ import { motion, Variants } from '@/components/module/framer-motion';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
+import { cn } from '@/lib/utils';
 
 interface FeatureItem {
   icon: string;
@@ -18,6 +19,7 @@ interface FeatureGridSectionProps {
   description?: string;
   items: FeatureItem[];
   variant?: 'circularIcon' | 'card';
+  iconBorder?: boolean;
   cta?: {
     text: string;
     href: string;    
@@ -30,6 +32,7 @@ export function FeatureGrid({
   description,
   items,
   variant = 'circularIcon',
+  iconBorder,
   cta,  
 }: FeatureGridSectionProps) {
 
@@ -52,7 +55,7 @@ export function FeatureGrid({
 
   return (
     <section className="py-16 md:py-24" style={{ backgroundColor: '#fdf8f8' }}>
-      <div className="container mx-auto px-4">        
+      <div className="container px-4">        
         <div className="text-center max-w-3xl mx-auto mb-12">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
             {tagline}
@@ -84,8 +87,8 @@ export function FeatureGrid({
               {/* Variant 1: Circular Icon Style */}
               {variant === 'circularIcon' && (
                 <div className="flex flex-col items-center text-center p-4">
-                  <div className="flex items-center justify-center w-20 h-20 rounded-full mb-4 text-red-500">                    
-                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-15 h-15' />
+                  <div className={cn( "flex items-center justify-center  mb-4", iconBorder ? " w-20 h-20 rounded-full border-2 border-red-600 " : "")}>                    
+                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-10 h-auto' />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{item.description}</p>
