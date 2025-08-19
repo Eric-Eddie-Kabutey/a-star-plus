@@ -1,13 +1,14 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, Variants } from '@/components/module/framer-motion';
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import type { SpecialistsSectionData } from '@/types/com/service';
 import Image from 'next/image';
+import { QuoteDialog } from '../../header/dialog-quote';
 
 export function Specialist({ data }: { data: SpecialistsSectionData }) {
+  const [isQuoteDialogOpen, setIsQuoteDialogOpen] = useState(false);
   
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -28,6 +29,7 @@ export function Specialist({ data }: { data: SpecialistsSectionData }) {
 
   return (
     <section className="py-16 md:py-24 bg-gray-50">
+      <QuoteDialog open={isQuoteDialogOpen} onOpenChange={setIsQuoteDialogOpen} />
       <motion.div
         className="container mx-auto px-4"
         variants={containerVariants}
@@ -67,7 +69,7 @@ export function Specialist({ data }: { data: SpecialistsSectionData }) {
 
         {/* CTA Banner */}
         <motion.div
-          className="mt-16 bg-indigo-900 text-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col lg:flex-row justify-between items-center gap-8"
+          className="mt-16 bg-[#000084] text-white rounded-2xl shadow-lg p-8 md:p-12 flex flex-col lg:flex-row justify-between items-center gap-8"
           variants={itemVariants}
         >
           <div className="text-center lg:text-left">
@@ -75,8 +77,8 @@ export function Specialist({ data }: { data: SpecialistsSectionData }) {
             <p className="mt-2 text-indigo-200 max-w-2xl">{data.ctaBanner.description}</p>
           </div>
           <div className="flex-shrink-0 w-full lg:w-auto">
-            <Button asChild size="lg" className="bg-white text-indigo-900 hover:bg-gray-200 text-base py-6 px-8 rounded-lg w-full lg:w-auto">
-              <Link href={data.ctaBanner.button.href}>{data.ctaBanner.button.text}</Link>
+            <Button asChild size="lg" className="bg-white text-[#000084] hover:bg-gray-200 text-base py-6 px-8 rounded-lg w-full lg:w-auto">              
+              <button onClick={() => setIsQuoteDialogOpen(true)}>{data.ctaBanner.button.text}</button>
             </Button>
           </div>
         </motion.div>
