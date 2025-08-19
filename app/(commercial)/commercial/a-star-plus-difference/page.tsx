@@ -48,7 +48,7 @@ export default function ASartPlusDifferencePage() {
             <Documentation data={documentationAndTrainingData} />
 
 			{/* faq */}
-			<Faq title={<>Commercial Pest <br /> Control FAQ</>} faqItems={faqDataAStartPlus} />
+			<Faq page="commercial" title={<>Commercial Pest <br /> Control FAQ</>} faqItems={faqDataAStartPlus} />
 
 			{/* contact  */}
 			{/* Render the BLUE version on another page or section */}

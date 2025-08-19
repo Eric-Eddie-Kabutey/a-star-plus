@@ -184,6 +184,6 @@ export default function CommercialPage() {
       <Testimonials />
 
       {/* Faq */}
-      <Faq title={<>Everything You Need<br /> to Know</>} hint="All Questions" faqItems={faqItems} />
+      <Faq page="commercial" title={<>Everything You Need<br /> to Know</>} hint="All Questions" faqItems={faqItems} />
     </>)
 }
