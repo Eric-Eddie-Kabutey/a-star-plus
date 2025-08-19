@@ -45,14 +45,15 @@ export function Service({
       {/* Decorative Background Shape */}
       {/* <div className="absolute -bottom-32 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-50 pointer-events-none" /> */}
       <div className='absolute bottom-0 right-0'>
-        <Image src="/assets/com/ellipse-bottom.png" alt='decorated circle' width={100}  height={100} className='w-50 h-50 md:w-96 md:h-96' />
+        <Image src="/assets/com/ellipse-bottom.png" alt='decorated circle' width={100} height={100} className='w-52 h-auto md:w-92 ' />
+        {/* w-50 h-50 md:w-96 md:h-96 */}
       </div>
 
       
-      <div className="container mx-auto px-4 z-10">
+      <div className="container mx-auto px-4 z-10 flex flex-col gap-8 md:gap-12">
         {/* Section Header */}
         <motion.div
-          className="text-center max-w-4xl mx-auto mb-12"
+          className="text-center max-w-4xl mx-auto flex flex-col gap-4"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
@@ -95,7 +96,7 @@ export function Service({
 
           {/* Right Side: Image */}
           <motion.div
-            className="relative h-[350px] rounded-2xl shadow-lg overflow-hidden"
+            className="relative aspect-square rounded-2xl shadow-lg overflow-hidden"
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"

@@ -36,7 +36,7 @@ export function IndustrySolutions({
       {/* <div className="absolute top-0 right-0 w-96 h-96 bg-purple-100/50 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3 pointer-events-none" /> */}
 
       <div className='absolute top-0 right-0'>
-              <Image src="/assets/com/ellipse-top.png" alt='decorated circle' width={100}  height={100} className='w-52 h-53 md:w-96 md:h-96' />
+              <Image src="/assets/com/ellipse-top.png" alt='decorated circle' width={100}  height={100} className='w-54 h-auto md:w-96' />
             </div>
       
       <div className="container mx-auto px-4 z-10 relative">
