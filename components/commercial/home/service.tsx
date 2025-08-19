@@ -42,11 +42,9 @@ export function Service({
 
   return (
     <section className="relative py-16 md:py-24 bg-gray-50 overflow-hidden">
-      {/* Decorative Background Shape */}
-      {/* <div className="absolute -bottom-32 right-0 w-96 h-96 bg-blue-500 rounded-full blur-3xl opacity-50 pointer-events-none" /> */}
+      {/* Decorative Background Shape */}      
       <div className='absolute bottom-0 right-0'>
-        <Image src="/assets/com/ellipse-bottom.png" alt='decorated circle' width={100} height={100} className='w-52 h-auto md:w-92 ' />
-        {/* w-50 h-50 md:w-96 md:h-96 */}
+        <Image src="/assets/com/ellipse-bottom.png" alt='decorated circle' width={100} height={100} className='w-52 h-auto md:w-92 ' />        
       </div>
 
       
