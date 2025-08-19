@@ -94,7 +94,7 @@ export function BusinessProtection({
 
 					{/* Right Side: Image */}
 					<motion.div
-						className='relative h-[400px] rounded-2xl shadow-lg overflow-hidden'
+						className='relative aspect-square rounded-2xl shadow-lg overflow-hidden'
             variants={imageVariants}             
             initial="hidden"
             whileInView="visible"
