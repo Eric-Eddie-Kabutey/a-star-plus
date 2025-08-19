@@ -11,8 +11,10 @@ import {
 } from "@/components/ui/accordion";
 import { FaqProps } from '@/types/share/faq';
 import React from 'react';
+import { cn } from '@/lib/utils';
 
 interface FAQProps {
+  page?: string;
   title: React.ReactNode;
   hint?: string;
   faqItems: FaqProps[];
@@ -29,7 +31,7 @@ const rightColumnVariants: Variants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export function Faq({title, hint, faqItems}: FAQProps) {
+export function Faq({page = "residential",title, hint, faqItems}: FAQProps) {
   return (    
     <section className="bg-white py-20 sm:py-28 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -43,12 +45,12 @@ export function Faq({title, hint, faqItems}: FAQProps) {
             variants={leftColumnVariants}
           >
             <div>
-              <p className="text-base font-semibold leading-7 text-red-600">FAQ</p>
+              <p className={cn("text-base font-semibold leading-7 text-red-600", page === "residential" ? "text-red-600" : "text-[#000084]")}>FAQ</p>
               <h2 className="max-w-[457px] mt-2 text-3xl font-bold tracking-wide leading-10 text-gray-900 sm:text-4xl">
                 {title}
               </h2>
              {hint && ( <div className="mt-10">
-                <Link href="/faq" className="inline-flex items-center text-base font-semibold text-gray-800 hover:text-red-600 group">
+                <Link href="/faq" className={cn("inline-flex items-center text-base font-semibold text-gray-800 group", page === "residential" ? "hover:text-red-600" : "hover:text-[#000089]")}>
                   {hint}
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
