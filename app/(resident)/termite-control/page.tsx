@@ -71,7 +71,7 @@ export default function MothsPage() {
 				mainList={termiteControlData.mainList}
 				imageUrl={termiteControlData.imageUrl}
 				imageAlt={termiteControlData.imageAlt}
-				layout='imageRight'
+				layout='imageRight'				
             />
             
             {/* Why centipedes: Image on the RIGHT (default layout) */}
