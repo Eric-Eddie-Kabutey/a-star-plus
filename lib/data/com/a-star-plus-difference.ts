@@ -156,7 +156,7 @@ export const documentationAndTrainingData: DocumentationAndTrainingData = {
             tags: [ 'Food Storage', 'Sanitation', 'Early Signs', 'Reporting', 'Seasonal Risks' ],
         },
         proTip: {
-            icon: '/assets/icons/lightbulb-green.svg',
+            icon: '/assets/com/icons/lightbulb-green.svg',
             text: 'Pro Tip: Businesses with trained staff experience 60% fewer pest incidents than those without training programs.',
         },
     },
