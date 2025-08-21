@@ -58,7 +58,7 @@ export function Contact({
         <motion.div variants={itemVariants}>
           <p className={cn(
             'font-bold uppercase tracking-wider text-sm mb-2',
-            variant === 'red' ? 'text-red-600' : 'text-blue-600'
+            variant === 'red' ? 'text-red-600' : 'text-[#000084]'
           )}>
             {tagline}
           </p>
@@ -114,7 +114,7 @@ export function Contact({
                 'w-full',
                 variant === 'red' 
                   ? 'bg-red-600 hover:bg-red-700' 
-                  : 'bg-blue-900 hover:bg-blue-800'
+                  : 'bg-[#000084] hover:bg-[#000080]'
               )}>
                 Submit
               </Button>
