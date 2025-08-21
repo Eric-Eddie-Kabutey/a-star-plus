@@ -10,6 +10,10 @@ import { GoogleIcon } from '@/components/icons/google-icon';
 import { cn } from '@/lib/utils';
 import { testimonials } from '@/lib/data/shared/testimonial';
 
+interface TestimonialProps {
+  id?: string;
+}
+
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
@@ -30,7 +34,7 @@ const itemVariants: Variants = {
   },
 };
 
-export function Testimonials() {
+export function Testimonials({id}: TestimonialProps) {
   const options: EmblaOptionsType = { loop: true, align: 'start' };
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [selectedIndex, setSelectedIndex] = useState(0);
@@ -50,7 +54,7 @@ export function Testimonials() {
 
   return (
     // Add overflow-hidden to contain any visual artifacts during animation
-    <section className="bg-white py-20 sm:py-28 overflow-hidden">
+    <section id={id ? `${id}` : ""} className="bg-white py-20 sm:py-28 overflow-hidden">
       {/* 3. Wrap the main content in a motion.div to control the staggered animation */}
       <motion.div
         className="container mx-auto px-4 sm:px-6 lg:px-8"

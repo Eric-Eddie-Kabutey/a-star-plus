@@ -15,9 +15,10 @@ interface CommonPestsSectionProps {
   tagline: string;
   title: React.ReactNode; // Use ReactNode to allow for <br /> tags
   pests: Pest[];
+  id?: string;
 }
 
-export function CommonPestsSection({ tagline, title, pests }: CommonPestsSectionProps) {
+export function CommonPestsSection({ tagline, title, pests, id }: CommonPestsSectionProps) {
   
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -42,7 +43,7 @@ export function CommonPestsSection({ tagline, title, pests }: CommonPestsSection
   };
 
   return (
-    <section className="py-16 md:py-24" style={{ backgroundColor: '#fdf8f8' }}>
+    <section id={id ? `${id}` : ""} className="py-16 md:py-24" style={{ backgroundColor: '#fdf8f8' }}>
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-start md:text-center mb-12 flex flex-col gap-2">

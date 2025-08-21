@@ -50,7 +50,7 @@ export function ComprehensiveServices({
 	}
 
 	return (
-		<section id='#comprehensive-service' className='py-16 md:py-24 bg-white'>
+		<section id='services' className='py-16 md:py-24 bg-white'>
 			<div className='container mx-auto px-4'>
 				{/* Section Header */}
 				<div className='text-center max-w-3xl mx-auto mb-16'>
@@ -76,15 +76,14 @@ export function ComprehensiveServices({
 							variants={itemVariants}>
 							<div className='flex-grow'>
 								<div className='flex items-center gap-4 mb-4'>
-									<div className='flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-red-100 text-red-600'>
+									
 										<Image
 											src={service.icon}
 											alt={service.accordionTitle}
 											width={100}
 											height={80}
-											className='w-6 h-6'
+											className='w-auto h-6 md:h-12'
 										/>
-									</div>
 									<div>
 										<h3 className='text-lg font-bold text-gray-900'>
 											{service.title}

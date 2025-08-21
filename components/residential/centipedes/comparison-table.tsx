@@ -32,6 +32,7 @@ interface ComparisonTableSectionProps {
     text: string;
     style?: 'success' | 'warning';
   };
+  id?: string
 }
 
 export function ComparisonTable({
@@ -41,7 +42,8 @@ export function ComparisonTable({
   itemAName,
   itemBName,
   data,
-  bottomNote
+  bottomNote,
+  id
 }: ComparisonTableSectionProps) {
 
   const containerVariants: Variants = {
@@ -67,6 +69,7 @@ export function ComparisonTable({
 
   return (
     <motion.section
+      id={id ? `${id}` : ""}
       className="py-16 md:py-24"
       style={{ backgroundColor: '#fdf8f8' }}
       variants={containerVariants}
@@ -76,11 +79,11 @@ export function ComparisonTable({
     >
       <div className="container mx-auto px-4 max-w-4xl">
         {/* Section Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 flex flex-col gap-2">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
             {tagline}
           </p>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">
             {title}
           </h2>
           {description && (

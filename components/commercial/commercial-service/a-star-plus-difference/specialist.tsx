@@ -28,7 +28,7 @@ export function Specialist({ data }: { data: SpecialistsSectionData }) {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id='trainedSpecialists' className="py-16 md:py-24 bg-gray-50">
       <QuoteDialog open={isQuoteDialogOpen} onOpenChange={setIsQuoteDialogOpen} />
       <motion.div
         className="container mx-auto px-4"

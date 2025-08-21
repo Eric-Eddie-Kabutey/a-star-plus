@@ -18,6 +18,7 @@ interface FAQProps {
   title: React.ReactNode;
   hint?: string;
   faqItems: FaqProps[];
+  id?: string;
 }
 
 
@@ -31,9 +32,9 @@ const rightColumnVariants: Variants = {
   visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: 'easeOut' } },
 };
 
-export function Faq({page = "residential",title, hint, faqItems}: FAQProps) {
+export function Faq({page = "residential",title, hint, faqItems, id}: FAQProps) {
   return (    
-    <section className="bg-white py-20 sm:py-28 overflow-x-hidden">
+    <section id={id ? `${id}` : ""} className="bg-white py-20 sm:py-28 overflow-x-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-2">
                     

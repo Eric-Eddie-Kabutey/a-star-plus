@@ -16,6 +16,7 @@ interface InfoSectionProps {
   imageUrl: string;
   imageAlt: string;
   layout?: 'imageLeft' | 'imageRight';
+  id?: string;
 }
 
 export function InfoSection({
@@ -26,6 +27,7 @@ export function InfoSection({
   imageUrl,
   imageAlt,
   layout = 'imageRight',
+  id
 }: InfoSectionProps) {
   
   const containerVariants: Variants = {
@@ -72,6 +74,7 @@ export function InfoSection({
 
   return (
     <motion.section
+      id={id ? `${id}` : ""} 
       className="py-16 md:py-24 bg-white overflow-hidden"
       variants={containerVariants}
       initial="hidden"

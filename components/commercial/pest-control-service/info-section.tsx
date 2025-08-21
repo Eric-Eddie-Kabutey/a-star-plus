@@ -26,6 +26,7 @@ interface InfoSectionProps {
 		text: string
 		href: string
 	}
+	id?: string
 }
 
 export function InfoSection({
@@ -38,6 +39,7 @@ export function InfoSection({
 	imageAlt,
 	layout = 'imageRight',
 	cta,
+	id,
 }: InfoSectionProps) {
 	const containerVariants: Variants = {
 		hidden: { opacity: 0 },
@@ -71,6 +73,7 @@ export function InfoSection({
 
 	return (
 		<motion.section
+			id={id ? `${id}` : ""}
 			className='py-16 md:py-24 bg-white overflow-hidden'
 			variants={containerVariants}
 			initial='hidden'

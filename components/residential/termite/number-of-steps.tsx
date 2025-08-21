@@ -53,6 +53,7 @@ export function NumberedSteps({
 
   return (
     <motion.section
+      id="termite-control-investment"
       className="py-16 md:py-24"
       style={{ backgroundColor: 'oklch(88.5% 0.062 18.334)' }}
       variants={sectionVariants}

@@ -10,7 +10,7 @@ import Image from 'next/image';
 const FeatureItem = ({ icon, title, description, iconBg }: FeatureDetailItem & { iconBg: string, iconColor: string }) => (
   <div className="flex items-start gap-4">
     <div className={`flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full ${iconBg}`}>            
-            <Image src={icon} alt={title} width={100} height={100} className='w-12 h-12' />
+            <Image src={icon} alt={title} width={100} height={100} className='w-8 h-auto' />
     </div>
     <div>
       <h4 className="font-bold text-gray-800">{title}</h4>
@@ -39,7 +39,7 @@ export function CommercialApproach({ data }: { data: CommercialApproachData }) {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-gray-50">
+    <section id="commercial-approach" className="py-16 md:py-24 bg-gray-50">
       <motion.div
         className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12"
         variants={containerVariants}
@@ -68,7 +68,7 @@ export function CommercialApproach({ data }: { data: CommercialApproachData }) {
             <h3 className="text-xl font-bold text-gray-900 mb-6">{data.whyChooseUs.title}</h3>
             <div className="space-y-6">
               {data.whyChooseUs.items.map((item) => (
-                <FeatureItem key={item.title} {...item} iconBg="bg-indigo-900" iconColor="text-white" />
+                <FeatureItem key={item.title} {...item} iconBg="bg-[#000084]" iconColor="text-white" />
               ))}
             </div>
           </div>
@@ -79,8 +79,8 @@ export function CommercialApproach({ data }: { data: CommercialApproachData }) {
             <p className="mt-2 text-sm text-gray-600">{data.compliance.description}</p>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-3">
               {data.compliance.items.map((item) => (
-                <div key={item} className="flex items-center gap-2">
-                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" />
+                <div key={item} className="flex items-center gap-2">                  
+                  <Image src="/assets/shared/icons/green-checked.png" alt={data.mainTitle} width={100} height={80} className='w-4 h-auto md:w-6' />
                   <span className="text-sm text-gray-700">{item}</span>
                 </div>
               ))}

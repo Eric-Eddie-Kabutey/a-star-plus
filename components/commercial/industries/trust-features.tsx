@@ -10,6 +10,7 @@ export function TrustFeatures({
 	title,
 	description,
 	features,
+	id,
 }: TrustFeaturesData) {
 	const containerVariants: Variants = {
 		hidden: { opacity: 0 },
@@ -29,17 +30,17 @@ export function TrustFeatures({
 	}
 
 	return (
-		<section className='py-16 md:py-24 bg-gray-50'>
+		<section id={id ? `{id}` : ""} className='py-16 md:py-24 bg-gray-50'>
 			<motion.div
-				className='container mx-auto px-4'
+				className='container mx-auto px-4 flex flex-col gap-2'
 				variants={containerVariants}
 				initial='hidden'
 				whileInView='visible'
 				viewport={{ once: true, amount: 0.2 }}>
 				{/* Section Header */}
-				<div className='text-center max-w-3xl mx-auto mb-16'>
+				<div className='text-center max-w-4xl mx-auto mb-16 flex flex-col gap-2'>
 					<motion.p
-						className='text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2'
+						className='text-[#000084] font-bold uppercase tracking-wider text-sm mb-2'
 						variants={itemVariants}>
 						{tagline}
 					</motion.p>

@@ -129,17 +129,17 @@ const commercialApproachData: CommercialApproachData = {
   mainDescription: 'A Star Plus Pest Control combines industry expertise with cutting-edge technology to deliver comprehensive pest management solutions.',
   processSteps: [
     {
-      icon: "/assets/com/icons/thorough-inspection.png",
+      icon: "/assets/com/icons/industries/thorough-inspection.png",
       title: 'Thorough Inspection',
       description: 'We begin with a comprehensive assessment of your facility to identify current issues and potential risks.',
     },
     {
-      icon: "/assets/com/icons/customized-plan.png",
+      icon: "/assets/com/icons/industries/customized-plan.png",
       title: 'Customized Plan',
       description: 'Our experts develop a tailored solution that addresses your specific pest challenges while complying with industry regulations.',
     },
     {
-      icon: "/assets/com/icons/ongoing-protection.png",
+      icon: "/assets/com/icons/industries/ongoing-protection.png",
       title: 'Ongoing Protection',
       description: 'We implement preventive measures and provide continuous monitoring to ensure long-term pest-free operations.',
     },
@@ -148,12 +148,12 @@ const commercialApproachData: CommercialApproachData = {
     title: 'Why Choose A Star Plus Pest Control?',
     items: [
       {
-        icon: "/assets/com/icons/industry-specific-certifications.png",
+        icon: "/assets/com/icons/industries/industry-specific-certifications.png",
         title: 'Industry-Specific Certifications',
         description: 'Our technicians hold specialised certifications for food processing, healthcare, pharmaceutical, and other regulated industries.',
       },
       {
-        icon: "/assets/com/icons/data-driven-solutions.png",
+        icon: "/assets/com/icons/industries/data-driven-solutions.png",
         title: 'Data-Driven Solutions',
         description: 'We utilize digital monitoring and reporting tools to track pest activity and measure program effectiveness.',
       },
@@ -193,6 +193,7 @@ export default function IndustryPage() {
         title={trustedByBusinessesData.title}
         description={trustedByBusinessesData.description}
         features={trustedByBusinessesData.features}
+        id="trusted-features"
         />
         
         {/* other industries */}

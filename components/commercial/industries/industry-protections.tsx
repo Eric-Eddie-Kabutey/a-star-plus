@@ -30,11 +30,11 @@ export function IndustryProtectionS({
 	}
 
 	return (
-		<section className='py-16 md:py-24 bg-gray-50'>
+		<section id="our-industries" className='py-16 md:py-24 bg-gray-50'>
 			<div className='container mx-auto px-4'>
 				{/* Section Header */}
-				<div className='text-center max-w-3xl mx-auto mb-16'>
-					<p className='text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2'>
+				<div className='text-center max-w-3xl mx-auto mb-16 flex flex-col gap-2'>
+					<p className='text-[#000084] font-bold uppercase tracking-wider text-sm mb-2'>
 						{tagline}
 					</p>
 					<h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900'>
@@ -58,7 +58,7 @@ export function IndustryProtectionS({
 							className='bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden h-full flex flex-col'
 							variants={itemVariants}>
 							{/* Card Header */}
-							<div className='bg-indigo-900 text-white p-6 flex items-center gap-4'>
+							<div className='bg-[#000084] text-white p-4 flex flex-col gap-4'>
 								<Image
 									src={industry.icon}
 									alt={industry.title}
