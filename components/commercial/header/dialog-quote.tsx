@@ -17,20 +17,23 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select';
-import { Button } from '@/components/ui/button'; 
+import { Button, buttonVariants } from '@/components/ui/button'; 
+import { cn } from '@/lib/utils';
 
 interface QuoteDialogProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   title?: string;
   description?: string;
+  buttonColor?: string;
 }
 
 export function QuoteDialog({ 
   open, 
   onOpenChange,
   title = "Request an estimate for your business",
-  description = "A Star Plus Pest Control are trained to diagnose and treat all types of pest problems." 
+  description = "A Star Plus Pest Control are trained to diagnose and treat all types of pest problems.",
+  buttonColor = "red-700"
 }: QuoteDialogProps) {
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
@@ -78,7 +81,7 @@ export function QuoteDialog({
             <Label htmlFor="street-address">Street Address</Label>
             <Input id="street-address" type="street-address" placeholder="eg. John Smith, 1234, Main Street, Texas" />
             </div>
-          <Button type="submit" className="w-full bg-[#000084] hover:bg-[#000089] text-white font-bold py-3">
+          <Button type="submit" className={cn(`w-full9 text-white font-bold py-3`, buttonColor === "red" ? "bg-red-700 hover:bg-red-800" : "bg-[#000084] hover:bg-[#000080]")}>
             Submit
           </Button>
          </form>
