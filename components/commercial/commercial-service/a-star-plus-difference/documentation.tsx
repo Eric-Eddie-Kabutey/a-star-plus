@@ -35,7 +35,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
       >
         {/* Left Column: Documentation */}
         <motion.div variants={itemVariants}>
-          <p className="text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2">
+          <p className="text-[#000084] font-bold uppercase tracking-wider text-sm mb-2">
             {data.documentation.tagline}
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -46,7 +46,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
           <ul className="mt-8 space-y-6">
             {data.documentation.features.map((feature) => (
               <li key={feature.title} className="flex items-start">
-                <span className="flex-shrink-0 mr-4 mt-1 w-2 h-2 rounded-full bg-indigo-600" />
+                <span className="flex-shrink-0 mr-4 mt-1 w-2 h-2 rounded-full bg-[#000084]" />
                 <div>
                   <h3 className="font-bold text-gray-800">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
@@ -59,7 +59,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
         {/* Right Column: Training */}
         <motion.div className="space-y-8" variants={itemVariants}>
           <div>
-            <p className="text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2">
+            <p className="text-[#000084] font-bold uppercase tracking-wider text-sm mb-2">
               {data.training.tagline}
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -82,8 +82,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
           </div>
 
           {/* Pro Tip Banner */}
-          <div className="bg-green-100 text-green-800 text-sm font-semibold p-4 rounded-lg flex items-start gap-3">
-            <Image src={data.training.proTip.icon} alt="Pro tip icon" width={16} height={16} className="mt-0.5"/>
+          <div className="bg-green-100 text-green-800 text-sm font-semibold p-4 rounded-lg flex items-start gap-3">            
             <span>{data.training.proTip.text}</span>
           </div>
         </motion.div>
