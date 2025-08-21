@@ -73,7 +73,7 @@ export function FeatureSection({
           className={cn(imagePosition === 'right' ? 'lg:order-1' : 'lg:order-2')}
           variants={imagePosition === 'right' ? slideInFromLeft : slideInFromRight}
         >
-          <p className="text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2">
+          <p className="text[#000084] font-bold uppercase tracking-wider text-sm mb-2">
             {data.tagline}
           </p>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
@@ -87,7 +87,7 @@ export function FeatureSection({
           >
             {data.features.map((feature, index) => (
               <motion.li key={index} className="flex items-start" variants={listItemVariants}>
-                <span className="flex-shrink-0 mr-4 mt-1 w-2 h-2 rounded-full bg-indigo-600" />
+                <span className="flex-shrink-0 mr-4 mt-1 w-2 h-2 rounded-full bg-[#000084]" />
                 <div>
                   <h3 className="font-bold text-gray-800">{feature.title}</h3>
                   <p className="text-gray-600">{feature.description}</p>
