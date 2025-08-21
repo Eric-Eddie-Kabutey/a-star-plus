@@ -3,6 +3,7 @@ export interface FeatureDetail {
   title: string;
   description: string;
   listItems: string[];
+  check?: boolean;
 }
 
 export interface DetailedFeatureGridData {
@@ -10,4 +11,5 @@ export interface DetailedFeatureGridData {
   title: string;
   description: string;
   features: FeatureDetail[];
+  id?: string;
 }

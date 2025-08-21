@@ -78,6 +78,7 @@ export interface TrustFeaturesData {
   title: string;
   description: string;
   features: TrustFeature[];
+  id?: string;
 }
 
 // our industry data

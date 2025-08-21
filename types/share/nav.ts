@@ -1,8 +1,9 @@
 // src/lib/navData.ts
 
 export interface NavLink {
-	href: string
-	label: string
+	href: string;
+	label: string;
+	id?: string;
 }
 
 export interface SubMenuColumn {
