@@ -5,23 +5,23 @@ export const homeServiceWhyUsData: WhyUsData = {
   title: "Texas's Trusted Choice for Carpenter Ant Removal",
   items: [
     {
-      icon: "/assets/icons/licensed.png", 
+      icon: "/assets/residential/icons/licensed.png", 
       title: 'Licensed & certified technicians',      
     },
     {
-      icon: "/assets/icons/integrate.png", 
+      icon: "/assets/residential/icons/integrate.png", 
       title: 'Integrated pest & property protection',      
     },
     {
-      icon: "/assets/icons/fast.png",
+      icon: "/assets/residential/icons/fast.png",
       title: 'Fast, same-day service available',      
     },
     {
-      icon: "/assets/icons/leafs.png",
+      icon: "/assets/residential/icons/leafs.png",
       title: 'Eco-conscious, safe treatments',      
     },
     {
-      icon: "/assets/icons/thumbs-up.png",
+      icon: "/assets/residential/icons/thumbs-up.png",
       title: 'Satisfaction guaranteed',      
     },
   ],

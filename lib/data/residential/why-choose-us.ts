@@ -29,7 +29,7 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
   description: 'At A Star Plus Pest Control, we don’t just get rid of pests, we build safer homes, support healthier environments, and create local impact. Here’s what makes us different from the rest.',
   features: [
     {
-      icon: "/assets/icons/a-star-plus/expert.png",
+      icon: "/assets/residential/icons/a-star-plus/expert.png",
       title: 'Expert Training',
       description: 'Certified Professionals. Constantly Sharpened. Every A Star Plus technician is professionally trained and state-certified.',
       listItems: [
@@ -37,9 +37,10 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
         'Monthly recertifications',
         'Industry-leading equipment training',
       ],
+      check: true
     },
     {
-      icon: "/assets/icons/a-star-plus/eco.png",
+      icon: "/assets/residential/icons/a-star-plus/eco.png",
       title: 'Environmental Responsibility',
       description: 'Protecting People, Pets & The Planet. We use eco-conscious methods that balance effective pest control with environmental care.',
       listItems: [
@@ -47,9 +48,10 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
         'Bee-safe practices',
         'Water-safe runoff protocols',
       ],
+      check: true
     },
     {
-      icon: "/assets/icons/a-star-plus/commitment.png",
+      icon: "/assets/residential/icons/a-star-plus/commitment.png",
       title: 'Commitment to Education',
       description: 'We Empower Our Customers. We believe educated homeowners make better, longer-lasting pest decisions.',
       listItems: [
@@ -57,9 +59,10 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
         'Read our monthly pest blog',
         'Download our free seasonal pest guide',
       ],
+      check: true
     },
     {
-      icon: "/assets/icons/a-star-plus/community.png",
+      icon: "/assets/residential/icons/a-star-plus/community.png",
       title: 'Community Involvement',
       description: 'Rooted in the Neighborhood. A Star Plus is locally owned — and community committed.',
       listItems: [
@@ -68,9 +71,10 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
         'Offer free educational talks',
         'Giving back is part of our treatment plan.',
       ],
+      check: true
     },
     {
-      icon: "/assets/icons/a-star-plus/franchise.png",
+      icon: "/assets/residential/icons/a-star-plus/franchise.png",
       title: 'Franchise Opportunities',
       description: 'Want to Run a Business That Makes a Difference? A Star Plus offers franchise partnerships to motivated individuals.',
       listItems: [
@@ -78,13 +82,14 @@ export const whyChooseUsDetailedData: DetailedFeatureGridData = {
       ],
     },
     {
-      icon: "/assets/icons/a-star-plus/company-history.png",
+      icon: "/assets/residential/icons/a-star-plus/company-history.png",
       title: 'Company History',
       description: 'From One Family to Thousands of Homes. Founded with a single truck and a mission to make pest control smarter and safer.',
       listItems: [
         '10+ years of trusted protection',
         'Serving thousands across Texas & beyond',
       ],
+      check: true
     },
   ],
 };

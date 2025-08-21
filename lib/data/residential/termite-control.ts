@@ -86,27 +86,27 @@ export const termiteTreatmentData: FeatureGridDataWith = {
   description: 'Not all homes (or termites) are the same. We tailor the most effective treatment from the options below:',
   items: [
     {
-      icon: '/assets/icons/termite/liquid-barrier-treatment.png',
+      icon: '/assets/residential/icons/termite/pre-construction-treatment.png',
       title: 'Liquid Barrier Treatment',
       description: 'A protective chemical zone around your home’s foundation that kills termites upon contact.',
     },
     {
-      icon: '/assets/icons/termite/bait-station.png',
+      icon: '/assets/residential/icons/termite/bait-station.png',
       title: 'Bait Stations',
       description: 'Discreet, underground bait systems that attract and eliminate the colony.',
     },
     {
-      icon: '/assets/icons/termite/foam-dust-treatment.png',
+      icon: '/assets/residential/icons/termite/foam-dust-treatment.png',
       title: 'Foam & Dust Treatment',
       description: 'Ideal for wall voids and hard-to-reach areas.',
     },
     {
-      icon: '/assets/icons/termite/wood-treatment.png',
+      icon: '/assets/residential/icons/termite/wood-treatment.png',
       title: 'Wood Treatment',
       description: 'Preventative solution for vulnerable wood structures and framing.',
     },
     {
-      icon: '/assets/icons/termite/pre-construction-treatment.png',
+      icon: '/assets/residential/icons/termite/liquid-barrier-treatment.png',
       title: 'Pre-Construction Treatment',
       description: 'Termite protection applied before a structure is built.',
     },
@@ -123,27 +123,27 @@ export const termiteWarningSignsData: FeatureGridDataWith = {
   title: 'Termite Damage Warning Signs',
   items: [
     {
-      icon: '/assets/icons/termite/sagging-or-hollow.png',
+      icon: '/assets/residential/icons/termite/sagging-or-hollow.png',
       title: 'Sagging or hollow-sounding wood',
       description: '', // Description is not used in the "chip" variant
     },
     {
-      icon: '/assets/icons/termite/tight-window.png',
+      icon: '/assets/residential/icons/termite/tight-window.png',
       title: 'Tight windows or doors (due to warped frames)',
       description: '',
     },
     {
-      icon: '/assets/icons/termite/blistering.png',
+      icon: '/assets/residential/icons/termite/blistering.png',
       title: 'Blistering paint or dark areas on walls',
       description: '',
     },
     {
-      icon: '/assets/icons/termite/mud-tubes.png',
+      icon: '/assets/residential/icons/termite/mud-tubes.png',
       title: 'Mud tubes on walls, ceilings, or beams',
       description: '',
     },
     {
-      icon: '/assets/icons/termite/small-piles.png',
+      icon: '/assets/residential/icons/termite/small-piles.png',
       title: 'Small piles of wings or frass (termite droppings)',
       description: '',
     },
@@ -206,22 +206,22 @@ export const termiteSpeciesData: {
     {
       name: 'Subterranean Termites',
       description: 'Live underground; most destructive species that require soil contact.',
-      imageUrl: '/assets/icons/subterranean-termite.png',
+      imageUrl: '/assets/residential/images/subterranean-termites.png',
     },
     {
       name: 'Drywood Termites',
       description: 'Infest dry wood; common in attics and furniture without soil contact.',
-      imageUrl: '/assets/icons/dry-wood-termite', 
+      imageUrl: '/assets/residential/images/dry-wood-termites.png', 
     },
     {
       name: 'Dampwood Termites',
       description: 'Thrive in moist, decaying wood; usually found outside structures.',
-      imageUrl: '/assets/icons/damp-wood-termite.png',
+      imageUrl: '/assets/residential/images/dampwood-termites.png',
     },
     {
       name: 'Formosan Termites',
       description: 'Aggressive and hard to control; known for large swarms and rapid destruction.',
-      imageUrl: '/assets/icons/formosan-termite.png',
+      imageUrl: '/assets/residential/images/formosan-termites.png',
     },
   ],
 };
@@ -234,17 +234,17 @@ export const termiteSwarmAlertData: FeatureGridData = {
   description: 'Swarmers are winged termites that fly out of a colony to start a new one, typically during spring or after rain.',
   items: [
     {
-      icon: '/assets/icons/weather.png',
+      icon: '/assets/shared/icons/weather.png',
       title: 'Discarded wings near windows',
       description: '', // Description is not used in this visual variant
     },
     {
-      icon: '/assets/icons/waterfall.png',
+      icon: '/assets/shared/icons/ice-water.png',
       title: 'Sudden swarm indoors or near lights',
       description: '',
     },
     {
-      icon: '/assets/icons/grasshopper.png',
+      icon: '/assets/shared/icons/grasshopper.png',
       title: 'Flying insects with straight antennae and equal-length wings',
       description: '',
     },
