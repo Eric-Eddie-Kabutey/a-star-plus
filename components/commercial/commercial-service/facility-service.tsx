@@ -32,11 +32,11 @@ export function FacilityServices({
 	}
 
 	return (
-		<section className='py-16 md:py-24 bg-gray-50'>
+		<section id='facilityServices' className='py-16 md:py-24 bg-gray-50'>
 			<div className='container mx-auto px-4'>
 				{/* Section Header */}
 				<div className='text-center max-w-3xl mx-auto mb-16'>
-					<p className='text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2'>
+					<p className='text-[#000084] font-bold uppercase tracking-wider text-sm mb-2'>
 						{tagline}
 					</p>
 					<h2 className='text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900'>
@@ -58,26 +58,18 @@ export function FacilityServices({
 							className={cn(
 								'rounded-2xl shadow-lg border h-full flex flex-col',
 								service.isHighlighted
-									? 'bg-indigo-900 text-white border-indigo-700'
+									? 'bg-[#000084] text-white border-indigo-700'
 									: 'bg-white text-gray-900 border-gray-100'
 							)}
 							variants={itemVariants}>
-							<div className='p-8'>
-								<div
-									className={cn(
-										'flex items-center justify-center w-16 h-16 rounded-full mb-6 flex-shrink-0',
-										service.isHighlighted
-											? 'bg-white/10 border-white/20'
-											: 'bg-blue-50 border-blue-100 border'
-									)}>
+							<div className='p-8 flex flex-col gap-2'>								
 									<Image
 										src={service.icon}
 										alt={service.title}
 										width={100}
 										height={80}
-										className='w-8 h-8'
+										className='w-10 h-10 md:w-14 md:h-14'
 									/>
-								</div>
 								<h3 className='text-xl font-bold'>{service.title}</h3>
 								<p
 									className={cn(
@@ -115,14 +107,14 @@ export function FacilityServices({
 									<div
 										className={cn(
 											'p-6 rounded-xl',
-											service.isHighlighted ? 'bg-indigo-800' : 'bg-gray-100'
+											service.isHighlighted ? 'bg-white' : 'bg-gray-100'
 										)}>
 										<h4 className='font-bold'>{service.nestedCard.title}</h4>
 										<ul className='mt-4 space-y-3'>
 											{service.nestedCard.items.map((item, itemIndex) => (
 												<li key={itemIndex} className='flex items-start gap-3'>
 													<Check className='w-5 h-5 text-green-500 mt-0.5 flex-shrink-0' />
-													<span className='text-sm'>{item}</span>
+													<span className={'text-sm text-gray-800'}>{item}</span>
 												</li>
 											))}
 										</ul>

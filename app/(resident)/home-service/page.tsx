@@ -56,6 +56,7 @@ export default function HomeServicePage() {
 				title={homeServiceWhyUsData.title}
 				items={homeServiceWhyUsData.items}
 				variant='card' // Explicitly set or omit to use default
+				id="why-us"
 			/>
 
 			{/* Testimonial */}

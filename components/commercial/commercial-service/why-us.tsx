@@ -6,7 +6,12 @@ import { Quote } from 'lucide-react';
 import type { WhyUsData } from '@/types/com/service';
 import Image from 'next/image';
 
-export function WhyUs({ data }: { data: WhyUsData }) {
+interface WhyUsProps {
+  data: WhyUsData;
+  id?: string;
+}
+
+export function WhyUs({ data, id }: WhyUsProps) {
   
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -26,7 +31,7 @@ export function WhyUs({ data }: { data: WhyUsData }) {
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id={id ? `${id}` : ""} className="py-16 md:py-24 bg-white">
       <motion.div
         className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start"
         variants={containerVariants}
@@ -48,7 +53,7 @@ export function WhyUs({ data }: { data: WhyUsData }) {
             {data.features.map((feature) => (
               <div key={feature.title} className="flex items-start gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-16 h-16 rounded-full bg-indigo-50/70">                        
-                        <Image src={feature.icon} alt={ feature.title} width={100} height={100} className='w-8 h-8' />
+                        <Image src={feature.icon} alt={ feature.title} width={100} height={80} className='w-6 h-auto' />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-800">{feature.title}</h3>

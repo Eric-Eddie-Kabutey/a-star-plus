@@ -29,15 +29,17 @@ export default function AStarPlusDifferentPage() {
 				title={whyChooseUsDetailedData.title}
 				description={whyChooseUsDetailedData.description}
 				features={whyChooseUsDetailedData.features}
+				id="why-choose-us"
 			/>
 
 			{/* Testimonial */}
-			<Testimonials />
+			<Testimonials id="testimonial" />
 
 			{/* Faq */}
 			<Faq
 				title={<>Bed Bugs Control <br /> FAQs</>}							
 				faqItems={faqItems}
+				id='faq'
 			/>
 
 			{/*CTA: Ready to Experience the A Star Plus Difference? */}			

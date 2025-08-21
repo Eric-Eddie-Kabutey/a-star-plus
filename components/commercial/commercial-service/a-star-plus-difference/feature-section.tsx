@@ -12,11 +12,13 @@ interface QaProgramSectionProps {
   data: QaProgramData;
   /** Controls the position of the image on large screens. Defaults to 'right'. */
   imagePosition?: 'left' | 'right';
+  id?: string;
 }
 
 export function FeatureSection({
   data,
   imagePosition = 'right', // Default to image on the right
+  id,
 }: QaProgramSectionProps) {
   
   // Animation variants (no changes needed here)
@@ -59,7 +61,7 @@ export function FeatureSection({
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id={id ? `${id}`: ""} className="py-16 md:py-24 bg-white overflow-hidden">
       <motion.div
         className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
         variants={containerVariants}

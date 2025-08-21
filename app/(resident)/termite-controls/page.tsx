@@ -28,8 +28,7 @@ const termitePreventionTipsData: FeatureGridData = {
 	tagline: 'PREVENTION TIPS',
 	title: (
 		<>
-			You can help protect your home by following
-			<br />
+			You can help protect your home by following			
 			these proven tips:
 		</>
 	),
@@ -74,6 +73,7 @@ export default function TermiteControlsPage() {
 				description={termiteTreatmentData.description}
 				items={termiteTreatmentData.items}
 				bottomNote={termiteTreatmentData.bottomNote}
+				id="types-of-termite-treatment"
 			/>
 
 			{/* termiteWarningSignsData */}
@@ -84,6 +84,7 @@ export default function TermiteControlsPage() {
 				items={termiteWarningSignsData.items}
 				bottomNote={termiteWarningSignsData.bottomNote}
 				variant='card'
+				id="termite-damage"
 			/>
 
 			<ComparisonTable
@@ -94,6 +95,7 @@ export default function TermiteControlsPage() {
 				itemBName={flyingAntsVsTermitesData.itemBName}
 				data={flyingAntsVsTermitesData.data}
 				bottomNote={flyingAntsVsTermitesData.bottomNote}
+				id="flies-ant-vs-termite"
 			/>
 
 			<FeatureGrid
@@ -102,12 +104,14 @@ export default function TermiteControlsPage() {
 				items={termitePreventionTipsData.items}
 				cta={termitePreventionTipsData.cta}
 				variant='card' // Use the 'card' variant
+				id="termite-prevention-tips"
 			/>
 
 			<CommonPestsSection
 				tagline={termiteSpeciesData.tagline}
 				title={termiteSpeciesData.title}
 				pests={termiteSpeciesData.pests}
+				id="types-of-termites"
 			/>
 
 			<FeatureGrid
@@ -115,6 +119,7 @@ export default function TermiteControlsPage() {
 				title={termiteSwarmAlertData.title}
 				description={termiteSwarmAlertData.description}
 				items={termiteSwarmAlertData.items}
+				id="termite-swarm"
 			/>
 
 			<NumberedSteps

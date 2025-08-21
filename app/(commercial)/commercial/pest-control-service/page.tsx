@@ -70,11 +70,12 @@ export default function PetControlsPage() {
 				tagline={commercialTermiteData.tagline}
 				title={commercialTermiteData.title}
 				description={commercialTermiteData.description}
-				features={commercialTermiteData.features} // Use the 'features' prop
+				features={commercialTermiteData.features} 
 				imageUrl={commercialTermiteData.imageUrl}
 				imageAlt={commercialTermiteData.imageAlt}
-				cta={commercialTermiteData.cta} // Pass the CTA data
+				cta={commercialTermiteData.cta} 
 				layout='imageRight'
+				id="termite-control"
 			/>
 
       {/* WHY US Why Choose A Star Plus? */}
@@ -97,15 +98,7 @@ export default function PetControlsPage() {
 				description={contactData.description}
 				contactDetails={contactData.contactDetails}
 				variant='blue'
-			/>
-
-			{/* <Contact
-        tagline={contactData.tagline}
-        title={contactData.title}
-        description={contactData.description}
-        contactDetails={contactData.contactDetails}
-        variant="red" // Or omit, since 'red' is the default
-      /> */}
+			/>			
 		</>
 	)
 }

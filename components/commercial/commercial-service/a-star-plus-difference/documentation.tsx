@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
 import { motion, Variants } from 'framer-motion';
 import type { DocumentationAndTrainingData } from '@/types/com/service';
 
@@ -25,7 +24,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white overflow-hidden">
+    <section id='serviceDocumentation' className="py-16 md:py-24 bg-white overflow-hidden">
       <motion.div
         className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start"
         variants={containerVariants}

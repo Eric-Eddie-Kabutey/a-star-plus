@@ -35,20 +35,20 @@ export default function ASartPlusDifferencePage() {
 
             {/* our assurance */}
             {/* EXAMPLE 1: Default layout with image on the RIGHT */}
-            <FeatureSection data={qaProgramData} />
+            <FeatureSection data={qaProgramData} id="goldMediaQA" />
 
             {/* our team */}
             <Specialist data={specialistsData} />
 
             {/* national service */}
             {/* EXAMPLE 2: Flipped layout with image on the LEFT */}
-            <FeatureSection data={nationalAccountsData} imagePosition="left" />
+            <FeatureSection data={nationalAccountsData} imagePosition="left" id="nationalAccounts" />
 
 			{/* documentation */}
             <Documentation data={documentationAndTrainingData} />
 
 			{/* faq */}
-			<Faq page="commercial" title={<>Commercial Pest <br /> Control FAQ</>} faqItems={faqDataAStartPlus} />
+			<Faq page="commercial" title={<>Commercial Pest <br /> Control FAQ</>} faqItems={faqDataAStartPlus} id="faq" />
 
 			{/* contact  */}
 			{/* Render the BLUE version on another page or section */}

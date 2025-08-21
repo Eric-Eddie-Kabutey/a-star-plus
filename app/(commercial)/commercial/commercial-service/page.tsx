@@ -19,17 +19,17 @@ const whyUsStandoutData = {
   description: 'With years of experience in commercial facility services, we’ve perfected our methods to deliver exceptional results for businesses of all sizes.',
   features: [
     {
-      icon: "/assets/com/com/industry-leading-standard.png",
+      icon: "/assets/com/icons/industry-leading-standards.png",
       title: 'Industry-Leading Standards',
       description: 'We exceed industry standards in all our services, ensuring your facility not only meets but surpasses health and safety requirements.',
     },
     {
-      icon: "/assets/com/com/trained-professionals.png",
+      icon: "/assets/com/icons/trained-professionals.png",
       title: 'Trained Professionals',
       description: 'Our team undergoes rigorous training and background checks, so you can trust the people working in your facility.',
     },
     {
-      icon: "/assets/com/com/eco-friendly-solutions.png",
+      icon: "/assets/com/icons/eco-friendly-solutions.png",
       title: 'Eco-Friendly Solutions',
       description: 'We prioritize environmentally responsible products that are tough on germs but gentle on the planet.',
     },
@@ -84,7 +84,7 @@ export default function CommercialServicesPage() {
       />
 
       {/* Why us */}
-      <WhyUs data={whyUsStandoutData} />
+      <WhyUs data={whyUsStandoutData} id="whyUs" />
       
       {/* CTA - reusable with blue bg */}
        {/* Render the BLUE version */}
