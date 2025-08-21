@@ -29,6 +29,7 @@ interface FeatureGridBannerProps {
     text: string;
     href: string;
   };
+  id?: string;
 }
 
 export function FeatureGridBanner({ // Renamed for clarity
@@ -39,6 +40,7 @@ export function FeatureGridBanner({ // Renamed for clarity
   variant = 'circularIcon',
   bottomNote, // Added to props
   cta,
+  id,
 }: FeatureGridBannerProps) {
 
   const containerVariants: Variants = {
@@ -59,7 +61,7 @@ export function FeatureGridBanner({ // Renamed for clarity
   };
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section id={id ? `${id}` : ""} className="py-16 md:py-24 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
@@ -87,19 +89,19 @@ export function FeatureGridBanner({ // Renamed for clarity
               variants={itemVariants}
             >
               {variant === 'circularIcon' && (
-                <div className="flex flex-col items-center text-center p-4">
-                  <div className="flex items-center justify-center w-20 h-20 rounded-full border border-red-200 mb-4">
-                    <Image src={item.icon} alt={`${item.title} icon`} width={40} height={40} />
-                  </div>
+                <div className="flex flex-col items-center gap-4 text-center p-4">
+                  {/* <div className="flex items-center justify-center w-20 h-20 rounded-full border border-red-200 mb-4">
+                  </div> */}
+                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={80} className='w-16 h-auto' />
                   <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{item.description}</p>
                 </div>
               )}
 
               {variant === 'card' && (
-                <div className="flex items-start gap-4 p-6 border border-red-200 rounded-xl h-full bg-white">
+                <div className="flex items-start gap-4 p-6 border border-[#A58219] rounded-xl h-full bg-white">
                   <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-red-50">
-                    <Image src={item.icon} alt={`${item.title} icon`} width={24} height={24} />
+                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={80} className='w-12 h-auto' />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
