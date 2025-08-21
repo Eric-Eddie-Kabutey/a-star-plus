@@ -24,6 +24,7 @@ interface FeatureGridSectionProps {
     text: string;
     href: string;    
   };  
+  id?: string;
 }
 
 export function FeatureGrid({
@@ -34,6 +35,7 @@ export function FeatureGrid({
   variant = 'circularIcon',
   iconBorder,
   cta,  
+  id,
 }: FeatureGridSectionProps) {
 
   const containerVariants: Variants = {
@@ -55,9 +57,9 @@ export function FeatureGrid({
 
   return (
     // #fdf8f8
-    <section className="py-16 md:py-24" style={{ backgroundColor: '#fff' }}>
+    <section id={id ? `${id}` : ""} className="py-16 md:py-24" style={{ backgroundColor: '#fff' }}>
       <div className="container mx-auto px-4">        
-        <div className="text-center mb-12 max-w-xl mx-auto flex flex-col gap-2">
+        <div className="text-center mb-12 max-w-4xl mx-auto flex flex-col gap-2 md-gap-4">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
             {tagline}
           </p>
@@ -89,7 +91,7 @@ export function FeatureGrid({
               {variant === 'circularIcon' && (
                 <div className="flex flex-col items-center text-center p-4">
                   <div className={cn( "flex items-center justify-center  mb-4", iconBorder ? " w-20 h-20 rounded-full border-2 border-red-600 " : "")}>                    
-                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-15 md:w-20 h-auto' />
+                    <Image src={item.icon} alt='icon' width={100} height={80} className='w-auto h-15 md:h-20' />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{item.description}</p>
