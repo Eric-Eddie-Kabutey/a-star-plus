@@ -18,7 +18,7 @@ export const cockroachData: PestInfoData = {
     'Thrive in kitchens, bathrooms, drains, basements, and behind appliances',
     'Difficult to eliminate without professional-grade treatment',
   ],
-  imageUrl: '/assets/images/cockroaches.png', 
+  imageUrl: '/assets/residential/images/cockroaches.png', 
   imageAlt: 'A cockroach on a white surface with medicine bottles in the background.',
 };
 
@@ -36,21 +36,21 @@ export const cockroachSpeciesData: PestSpecies[] = [
   {
     name: 'American Cockroach',
     description: 'Large reddish-brown roaches found in sewers, basements, and kitchens.',
-    imageUrl: '/assets/images/american-cockroach.png', // Placeholder
+    imageUrl: '/assets/residential/images/american-cockroach.png', // Placeholder
   },
   {
     name: 'German Cockroach',
     description: 'Small, fast, and the most common indoor species especially in apartment kitchens and restaurants.',
-    imageUrl: '/assets/images/german-cockroach.png',
+    imageUrl: '/assets/residential/images/german-cockroach.png',
   },
   {
     name: 'Oriental Cockroach',
     description: 'Likes cool, damp areas like drains, under sinks, and crawl spaces.',
-    imageUrl: '/assets/images/oriental-cockroach.png',
+    imageUrl: '/assets/residential/images/oriental-cockroach.png',
   },
   {
     name: 'Brown-Banded Cockroach',
     description: 'Found in dry locations and high places like ceilings or behind picture frames.',
-    imageUrl: '/assets/images/brown-branded-cockroach.png',
+    imageUrl: '/assets/residential/images/brown-branded-cockroach.png',
   },
 ];

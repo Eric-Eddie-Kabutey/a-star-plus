@@ -9,7 +9,7 @@ export const carpenterAntData = {
     'Expensive repairs if left untreated',
     'Recurring infestations if the colony isn’t fully eliminated',
   ],
-  imageUrl: '/assets/images/carpenter-ant.png', 
+  imageUrl: '/assets/residential/images/carpenter-ant.png', 
   imageAlt: 'A close-up of a black carpenter ant with large mandibles.',
 };
 

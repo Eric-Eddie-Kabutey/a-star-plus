@@ -17,7 +17,7 @@ export const beetleData: PestInfoData = {
     'Pantry beetles contaminate flour, grains, and dried goods',
     'Beetles can reproduce quickly and thrive in dark, undisturbed areas',
   ],
-  imageUrl: '/assets/images/black-beetle.png', 
+  imageUrl: '/assets/residential/images/black-beetle.png', 
   imageAlt: 'A close-up of a black beetle on a piece of wood.',
 };
 
@@ -32,26 +32,26 @@ export const beetleSpeciesData: PestSpecies[] = [
   {
     name: 'Carpet Beetles',
     description: 'Feed on natural fabrics and hide in closets, carpets, and upholstery',
-    imageUrl: '/assets/icons/beetle/carpet-beetle.png', 
+    imageUrl: '/assets/residential/icons/beetle/carpet-beetle.png', 
   },
   {
     name: 'Powderpost Beetles',
     description: 'Bore tiny holes in hardwood floors, beams, and furniture',
-    imageUrl: '/assets/icons/beetle/powderpost-beetle.png', 
+    imageUrl: '/assets/residential/icons/beetle/powderpost-beetle.png', 
   },
   {
     name: 'Cigarette Beetles',
     description: 'Infest stored products like spices, pet food, and dried flowers',
-    imageUrl: '/assets/icons/beetle/cigarette-beetle.png', 
+    imageUrl: '/assets/residential/icons/beetle/cigarette-beetle.png', 
   },
   {
     name: 'Grain Beetles',
     description: 'Invade pantries, often found in rice, cereals, and flour',
-    imageUrl: '/assets/icons/beetle/grain-beetle.png', 
+    imageUrl: '/assets/residential/icons/beetle/grain-beetle.png', 
   },
   {
     name: 'Ground Beetles',
     description: 'Usually enter through cracks; more nuisance than destructive, but persistent',
-    imageUrl: '/assets/icons/beetle/ground-beetle.png', 
+    imageUrl: '/assets/residential/icons/beetle/ground-beetle.png', 
   },
 ];

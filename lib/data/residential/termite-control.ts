@@ -25,7 +25,7 @@ export const termiteControlData: NestedListInfoData = {
       isNumberedSublist: true, // This is a numbered list
     },
   ],
-  imageUrl: '/assets/images/termite-control.png',
+  imageUrl: '/assets/residential/images/termite-control.png',
   imageAlt: 'A close-up of a termite colony in soil and wood.',
 };
 
@@ -53,7 +53,7 @@ export const tickControlData: NestedListInfoData = {
       isNumberedSublist: true, // This should be rendered as a, b, c...
     },
   ],
-  imageUrl: '/assets/images/tricks.png', // Placeholder image
+  imageUrl: '/assets/residential/images/tricks.png', // Placeholder image
   imageAlt: 'A close-up of a small black-legged tick on a person\'s finger.',
 };
 

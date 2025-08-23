@@ -18,6 +18,6 @@ export const cricketInfoData: PestInfoData = {
     'Cause sleepless nights with loud chirping',
     'Lay eggs indoors, leading to larger infestations',
   ],
-  imageUrl: '/assets/images/cricket.png',
+  imageUrl: '/assets/residential/images/cricket.png',
   imageAlt: 'A close-up of a brown cricket on a wooden surface.',
 };

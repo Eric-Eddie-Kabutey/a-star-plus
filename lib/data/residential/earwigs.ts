@@ -15,7 +15,7 @@ export interface ContentSectionData {
 export const earwigData: ContentSectionData = {
   tagline: 'KNOW MORE ABOUT EARWIGS',
   title: 'What Are Earwigs?',
-  imageUrl: '/assets/images/earwigs.png',
+  imageUrl: '/assets/residential/images/earwigs.png',
   imageAlt: 'A close-up of an earwig on a woven basket surface.',
   content: [
     {
