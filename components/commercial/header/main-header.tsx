@@ -38,7 +38,7 @@ export function MainHeader() {
         className="relative w-full bg-white shadow-md"
         onMouseLeave={() => setActiveHover(null)}
       >
-        <div className="container mx-auto flex h-20 items-center justify-between px-4">
+        <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto flex h-20 items-center justify-between px-4">
           {/* Logo */}
           <Link href="/commercial">
             <Image src="/assets/shared/logos/logo.png" alt="Logo" width={100} height={100} className='h-14 w-auto md:h-16 lg:h-20' />
@@ -67,7 +67,7 @@ export function MainHeader() {
 
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center space-x-4">
-            <Link href="/login" className="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
+            <Link href="/login" className="lg:hidden text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors">
               Login
             </Link>
             <button onClick={() => setIsAccountDialogOpen(true)} className="rounded-lg border border-blue-600 px-4 py-2 text-sm font-semibold text-blue-600 hover:bg-red-50 transition-colors">

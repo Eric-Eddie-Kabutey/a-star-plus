@@ -46,7 +46,7 @@ export function MainHeader() {
 			<div
 				className='relative w-full bg-white shadow-md'
 				onMouseLeave={() => setActiveHover(null)}>
-				<div className='container mx-auto flex h-20 items-center justify-between px-4'>
+				<div className='container lg:max-w-5xl xl:max-w-7xl mx-auto flex h-20 items-center justify-between px-4'>
 					{/* Logo */}
 					<Link href='/'>
 						<Image
@@ -84,7 +84,7 @@ export function MainHeader() {
 					<div className='hidden lg:flex items-center space-x-4'>
 						<Link
 							href='/login'
-							className='text-sm font-medium text-gray-600 hover:text-red-600 transition-colors'>
+							className='lg:hidden text-sm font-medium text-gray-600 hover:text-red-600 transition-colors'>
 							Login
 						</Link>
 						<button

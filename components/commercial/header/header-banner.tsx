@@ -81,7 +81,7 @@ export function HeaderBanner() {
         initial="initial"
         animate="animate"
         variants={contentVariants}
-        className="container mx-auto flex h-14 items-center justify-center px-4 md:justify-between"
+        className="container lg:max-w-5xl xl:max-w-7xl mx-auto flex h-14 items-center justify-center px-4 md:justify-between"
       >
         {/* Left Spacer */}
         <div className="hidden flex-1 md:flex" />
