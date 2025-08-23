@@ -81,32 +81,32 @@ const signsOfBeetlesData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/tiny-round-holes.png',
 			title: 'Tiny round holes',
 			description: 'Tiny round holes in wood, furniture, or floors',
 		},
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/powdery-residue-beetle.png',
 			title: 'Powdery residue (frass)',
 			description: 'Powdery residue (frass) near damaged wood',
 		},
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/damage-thinning.png',
 			title: 'Damaged/thinning areas',
 			description: 'Damaged or thinning areas in rugs, clothing, or upholstery',
 		},
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
 			title: 'Live or dead beetles',
 			description: 'Live or dead beetles in cabinets or around windowsills',
 		},
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
 			title: 'Foul odors',
 			description: 'Foul odors or spoiled pantry items',
 		},
 		{
-			icon: '/assets/residential/icons/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
 			title: 'Beetle larvae crawling',
 			description: 'Beetle larvae crawling on walls or baseboards',
 		},

@@ -42,7 +42,7 @@ const cardItemVariants: Variants = {
 export function Services() {
   return (    
     <section className="bg-white py-20 sm:py-28 overflow-x-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">
         
         {/* Section Header */}
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-2">          

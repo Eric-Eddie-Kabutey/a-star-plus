@@ -57,7 +57,7 @@ export function Hero() {
       <div className="absolute inset-0 z-[-1] bg-black/40" />
 
       {/* 3. Content Container */}
-      <div className="container mx-auto pt-8 px-4 sm:px-6 lg:px-8 h-full">
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto pt-8 px-4 sm:px-6 h-full">
         <div className="relative h-full flex items-center">
           
           {/* Main Text & Buttons Block */}

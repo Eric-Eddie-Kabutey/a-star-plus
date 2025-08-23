@@ -62,7 +62,7 @@ export function Hero({
       {background}
 
       <motion.div
-        className="relative z-10 text-center max-w-3xl flex flex-col items-center"
+        className="relative z-10 text-center container max-w-3xl  flex flex-col items-center"
         variants={containerVariants}
         initial="hidden"
         animate="visible"

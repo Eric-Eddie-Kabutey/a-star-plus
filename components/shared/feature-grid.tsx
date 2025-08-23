@@ -58,7 +58,7 @@ export function FeatureGrid({
   return (
     // #fdf8f8
     <section id={id ? `${id}` : ""} className="py-16 md:py-24" style={{ backgroundColor: '#fff' }}>
-      <div className="container mx-auto px-4">        
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">        
         <div className="text-center mb-12 max-w-4xl mx-auto flex flex-col gap-2 md-gap-4">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
             {tagline}
@@ -89,7 +89,7 @@ export function FeatureGrid({
               
               {/* Variant 1: Circular Icon Style */}
               {variant === 'circularIcon' && (
-                <div className="flex flex-col items-center text-center p-4">
+                <div className="flex flex-col items-center text-center py-4">
                   <div className={cn( "flex items-center justify-center  mb-4", iconBorder ? " w-20 h-20 rounded-full border-2 border-red-600 " : "")}>                    
                     <Image src={item.icon} alt='icon' width={100} height={80} className='w-auto h-15 md:h-20' />
                   </div>
@@ -104,7 +104,7 @@ export function FeatureGrid({
 
               */}
               {variant === 'card' && (
-                <div className="flex items-start gap-4 p-6 border border-red-400 rounded-xl h-full bg-[#FDF5F7] min-h-40">
+                <div className="flex items-start gap-4 py-6 border border-red-400 rounded-xl h-full w-full bg-[#FDF5F7] min-h-40">
                   <div className="flex-shrink-0 flex items-center justify-center w-18 h-18  rounded-full bg-[#FDF5F7] border ">                    
                     <Image src={item.icon} alt='icon' width={100} height={40} className='w-auto h-15 ' />
                   </div>

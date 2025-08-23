@@ -66,7 +66,7 @@ export function ControlProcess({
 
   return (
     <section className="py-16 md:py-24 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">
         <motion.div
           className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
           initial="hidden"

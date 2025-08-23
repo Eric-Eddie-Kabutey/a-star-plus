@@ -42,7 +42,7 @@ const signsOfCarpenterAntsData = {
 			description: 'Sawdust-like shavings near wooden structures',
 		},
 		{
-			icon: '/assets/icons/carpenter-ants/unusual-sounds.png',
+			icon: '/assets/residential/icons/carpenter-ants/unusual-sounds.png',
 			title: 'Unusual Sounds',
 			description: 'Rustling or tapping noises from inside walls',
 		},

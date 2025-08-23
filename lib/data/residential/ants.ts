@@ -16,7 +16,7 @@ export const antData: AntDataProps = {
     'Fire ant stings cause allergic reactions in sensitive individuals',
     'Carpenter ants hollow out wooden structures over time',
   ],
-  imageUrl: '/assets/images/why-ants-sec-image.png', 
+  imageUrl: '/assets/residential/images/why-ants-sec-image.png', 
   imageAlt: 'A close-up of many ants swarming on a surface.',
 };
 
@@ -30,7 +30,7 @@ export const bedBugData: AntDataProps = {
     'DIY sprays often scatter, not kill, infestations',
     'Found in homes, hotels, schools, offices, and even public transport',
   ],
-  imageUrl: '/assets/images/bed-bugs-treatment.png', 
+  imageUrl: '/assets/residential/images/bed-bugs-treatment.png', 
   imageAlt: 'A pest control professional in a hazmat suit treating a bed.',
 };
 
@@ -44,26 +44,26 @@ export const antSpeciesData = [
   {
     name: 'Fire Ants',
     description: 'Aggressive, reddish ants known for painful stings and mounds in lawns.',
-    imageUrl: '/assets/images/fire-ant.png',
+    imageUrl: '/assets/residential/images/fire-ant.png',
   },
   {
     name: 'Carpenter Ants',
     description: 'Large black ants that damage wood structures.',
-    imageUrl: '/assets/images/carpenter-ant.png',
+    imageUrl: '/assets/residential/images/carpenter-ant.png',
   },
   {
     name: 'Odorous House Ants',
     description: 'Tiny ants that emit a foul smell when crushed.',
-    imageUrl: '/assets/images/odorous-house-ant.png',
+    imageUrl: '/assets/residential/images/odorous-house-ant.png',
   },
   {
     name: 'Pharaoh Ants',
     description: 'Difficult to control and known for contaminating food and sterile environments.',
-    imageUrl: '/assets/images/pharaoh-ant.png',
+    imageUrl: '/assets/residential/images/pharaoh-ant.png',
   },
   {
     name: 'Pavement Ants',
     description: 'Nest in cracks and crevices; often found on sidewalks and kitchens.',
-    imageUrl: '/assets/images/pavement-ant.png', 
+    imageUrl: '/assets/residential/images/pavement-ant.png', 
   },
 ];

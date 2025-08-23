@@ -34,31 +34,31 @@ const signsOfCricketsData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/residential/residential/icons/crickets/persistent-chirping.png',
+			icon: '/assets/residential/icons/crickets/persistent-chirping.png',
 			title: 'Persistent Chirping',
 			description:
 				'Continuous chirping sounds at night, especially from basements, garages, or dark corners',
 		},
 		{
-			icon: '/assets/residential/residential/residential/icons/crickets/live-cricket-sightings.png',
+			icon: '/assets/residential/icons/crickets/live-cricket-sightings.png',
 			title: 'Live Cricket Sightings',
 			description:
 				'Crickets seen around lights, in basements, garages, or other warm indoor areas',
 		},
 		{
-			icon: '/assets/residential/residential/residential/icons/crickets/fabric-damage.png',
+			icon: '/assets/residential/icons/crickets/fabric-damage.png',
 			title: 'Fabric Damage',
 			description:
 				'Holes or damage in furniture, clothes, drapes, or other fabric materials',
 		},
 		{
-			icon: '/assets/residential/residential/residential/icons/crickets/fecal-pellets.png',
+			icon: '/assets/residential/icons/crickets/fecal-pellets.png',
 			title: 'Fecal Pellets',
 			description:
 				'Small droppings found around baseboards, in dark corners, or near cricket hiding spots',
 		},
 		{
-			icon: '/assets/residential/residential/residential/icons/crickets/egg-deposits.png',
+			icon: '/assets/residential/icons/crickets/egg-deposits.png',
 			title: 'Egg Deposits',
 			description:
 				'Eggs laid in damp or protected indoor areas, indicating breeding activity',

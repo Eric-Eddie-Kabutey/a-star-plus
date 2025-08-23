@@ -44,7 +44,7 @@ export function CommonPestsSection({ tagline, title, pests, id }: CommonPestsSec
 
   return (
     <section id={id ? `${id}` : ""} className="py-16 md:py-24" style={{ backgroundColor: '#fdf8f8' }}>
-      <div className="container mx-auto px-4">
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-start md:text-center mb-12 flex flex-col gap-2">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">

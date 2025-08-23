@@ -57,7 +57,7 @@ export function Testimonials({id}: TestimonialProps) {
     <section id={id ? `${id}` : ""} className="bg-white py-20 sm:py-28 overflow-hidden">
       {/* 3. Wrap the main content in a motion.div to control the staggered animation */}
       <motion.div
-        className="container mx-auto px-4 sm:px-6 lg:px-8"
+        className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}

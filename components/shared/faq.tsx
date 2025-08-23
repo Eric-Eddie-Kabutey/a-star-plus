@@ -35,7 +35,7 @@ const rightColumnVariants: Variants = {
 export function Faq({page = "residential",title, hint, faqItems, id}: FAQProps) {
   return (    
     <section id={id ? `${id}` : ""} className="bg-white py-20 sm:py-28 overflow-x-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid grid-cols-1 gap-x-12 gap-y-16 lg:grid-cols-2">
                     
           <motion.div
