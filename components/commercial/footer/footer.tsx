@@ -49,7 +49,7 @@ export function Footer() {
           variants={footerContentVariants}
         >
           {/* Top CTA Section */}
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6  py-16 text-center">
             <motion.h2 variants={itemVariants} className="text-3xl sm:text-4xl font-bold tracking-tight">
               Let&apos;s solve your pest control problems.
             </motion.h2>
@@ -65,7 +65,7 @@ export function Footer() {
           </div>
 
           <div className="border-t border-gray-800">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6 py-20">
               {/* Main Footer Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
                 {/* Column 1: Logo and About */}
@@ -116,7 +116,7 @@ export function Footer() {
 
         {/* Bottom Bar - can be animated separately or not at all for stability */}
         <div className="bg-[#000084] py-4">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center text-sm">
+          <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row justify-between items-center text-sm">
             <p>&copy; {new Date().getFullYear()} A Star Plus Pest Control</p>
             <div className="flex space-x-6 mt-4 sm:mt-0">
               <Link href="/terms" className="hover:underline">Terms of use</Link>
