@@ -67,7 +67,7 @@ export function Hero({
 				onOpenChange={setIsQuoteDialogOpen}
 			/>
 
-			<div className='container mx-auto z-10 pt-28 md:pt-40'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto z-10 pt-28 md:pt-40'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-16 items-center'>
 					{/* Left Side: Content */}
 					<motion.div

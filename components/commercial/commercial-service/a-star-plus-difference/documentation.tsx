@@ -26,7 +26,7 @@ export function Documentation({ data }: { data: DocumentationAndTrainingData }) 
   return (
     <section id='serviceDocumentation' className="py-16 md:py-24 bg-white overflow-hidden">
       <motion.div
-        className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start"
+        className="container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

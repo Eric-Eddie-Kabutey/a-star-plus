@@ -32,7 +32,7 @@ export function TrustFeatures({
 	return (
 		<section id={id ? `{id}` : ""} className='py-16 md:py-24 bg-gray-50'>
 			<motion.div
-				className='container mx-auto px-4 flex flex-col gap-2'
+				className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto flex flex-col gap-2'
 				variants={containerVariants}
 				initial='hidden'
 				whileInView='visible'

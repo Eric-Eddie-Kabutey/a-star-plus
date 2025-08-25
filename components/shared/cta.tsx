@@ -54,7 +54,7 @@ export function CtaSection({
 				/>
 			)}
 
-			<div className='container mx-auto px-4'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				<motion.div
 					className={cn(
 						'rounded-xl p-8 md:p-16 text-center flex flex-col items-center',

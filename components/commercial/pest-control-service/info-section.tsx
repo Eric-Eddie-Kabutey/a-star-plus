@@ -79,7 +79,7 @@ export function InfoSection({
 			initial='hidden'
 			whileInView='visible'
 			viewport={{ once: true, amount: 0.3 }}>
-			<div className='container mx-auto px-4'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
 					{/* Text Content Block */}
 					<motion.div

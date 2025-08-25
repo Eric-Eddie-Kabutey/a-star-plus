@@ -48,7 +48,7 @@ export function Contact({
   return (
     <section className="py-16 md:py-24 bg-gray-100">
       <motion.div
-        className="container mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16"
+        className="container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

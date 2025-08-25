@@ -43,7 +43,7 @@ export function BusinessProtection({
 
 	return (
 		<section className='py-16 md:py-24' style={{ backgroundColor: '#f3f4ff' }}>
-			<div className='container mx-auto px-4'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				<motion.div
 					variants={containerVariants}
 					initial='hidden'

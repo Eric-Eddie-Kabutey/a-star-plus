@@ -44,8 +44,8 @@ export function Guarantee({ data }: { data: GuaranteeData }) {
 	}
 
 	return (
-		<section className='py-16 md:py-24 bg-white'>
-			<div className='container mx-auto px-4'>
+		<section id="commercialTripleGuarantee" className='py-16 md:py-24 bg-white'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				<div className='text-center max-w-3xl mx-auto mb-16'>
 					<p className='text-indigo-600 font-bold uppercase tracking-wider text-sm mb-2'>
 						{data.tagline}

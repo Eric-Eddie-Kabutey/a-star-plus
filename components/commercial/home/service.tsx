@@ -48,7 +48,7 @@ export function Service({
       </div>
 
       
-      <div className="container mx-auto px-4 z-10 flex flex-col gap-8 md:gap-12">
+      <div className="container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto z-10 flex flex-col gap-8 md:gap-12">
         {/* Section Header */}
         <motion.div
           className="text-center max-w-4xl mx-auto flex flex-col gap-4"

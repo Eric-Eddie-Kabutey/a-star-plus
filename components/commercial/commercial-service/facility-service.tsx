@@ -33,7 +33,7 @@ export function FacilityServices({
 
 	return (
 		<section id='facilityServices' className='py-16 md:py-24 bg-gray-50'>
-			<div className='container mx-auto px-4'>
+			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				{/* Section Header */}
 				<div className='text-center max-w-3xl mx-auto mb-16'>
 					<p className='text-[#000084] font-bold uppercase tracking-wider text-sm mb-2'>

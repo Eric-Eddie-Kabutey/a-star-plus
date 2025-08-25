@@ -39,7 +39,7 @@ export function Approach({
 
 
       <motion.div
-        className="container mx-auto px-4"
+        className="container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"

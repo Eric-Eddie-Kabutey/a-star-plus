@@ -37,7 +37,7 @@ export function IndustrySolutions({
           <Image src="/assets/com/ellipse-top.png" alt='decorated circle' width={100}  height={100} className='w-54 h-auto md:w-96' />
       </div>
       
-      <div className="container mx-auto px-4 z-10 relative">
+      <div className="container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto z-10 relative">
         {/* Section Header with Split Layout */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-8 mb-12">
           <div className="max-w-xl">
