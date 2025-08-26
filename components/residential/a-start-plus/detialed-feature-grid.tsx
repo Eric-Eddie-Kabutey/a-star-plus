@@ -54,14 +54,16 @@ export function DetailedFeatureGrid({
 						<motion.div
 							key={index}
 							className='bg-white rounded-2xl shadow-md border border-gray-100 p-8 flex flex-col gap-2 md:gap-8 h-full'
-							variants={itemVariants}>							
+							variants={itemVariants}>		
+							<div className="flex-shrink-0 flex items-center justify-center w-15 h-15 rounded-full border border-red-500">
 								<Image
 									src={feature.icon}
 									alt={feature.title}
 									width={100}
-									height={80}
-									className='w-12 h-auto'
+									height={100}
+									className='w-auto h-auto'
 								/>
+							</div>
 							<h3 className='text-xl font-bold text-gray-900'>
 								{feature.title}
 							</h3>
