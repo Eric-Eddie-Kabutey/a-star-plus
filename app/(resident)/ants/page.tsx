@@ -53,28 +53,28 @@ const tipsData = {
 	title: 'Tips to Keep Ants Out After Treatment',
 	items: [
 		{
-			icon: '/assets/residential/icons/ants/customized-for-hotel-or-business.png',
+			icon: '/assets/residential/icons/ants/keep-food-sealed.png',
 			title: 'Keep Food Sealed',
 			description:
 				'Store food in airtight containers and clean up crumbs immediately',
 		},
 		{
-			icon: '/assets/residential/icons/ants/customized-for-hotel-or-business.png',
+			icon: '/assets/residential/icons/ants/daily-trash-removal.png',
 			title: 'Daily Trash Removal',
 			description: 'Take out the trash daily and keep bins sealed',
 		},
 		{
-			icon: '/assets/residential/icons/ants/customized-for-hotel-or-business.png',
+			icon: '/assets/residential/icons/ants/fix-water-issues.png',
 			title: 'Fix Water Issues',
 			description: 'Repair leaky pipes and eliminate standing water',
 		},
 		{
-			icon: '/assets/residential/icons/ants/customized-for-hotel-or-business.png',
+			icon: '/assets/residential/icons/ants/sealed-entry-points.png',
 			title: 'Seal Entry Points',
 			description: 'Close cracks in walls and around windows',
 		},
 		{
-			icon: '/assets/residential/icons/ants/customized-for-hotel-or-business.png',
+			icon: '/assets/residential/icons/ants/pet-food-storage.png',
 			title: 'Pet Food Storage',
 			description: "Don't leave pet food out overnight",
 		},
