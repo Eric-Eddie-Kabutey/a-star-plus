@@ -90,18 +90,18 @@ export function FeatureGridBanner({ // Renamed for clarity
             >
               {variant === 'circularIcon' && (
                 <div className="flex flex-col items-center gap-4 text-center p-4">
-                  {/* <div className="flex items-center justify-center w-20 h-20 rounded-full border border-red-200 mb-4">
-                  </div> */}
-                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={80} className='w-16 h-auto' />
+                  <div className="flex items-center justify-center w-15 h-15 rounded-full border border-red-500 mb-4">
+                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={100} className='w-auto h-auto' />
+                  </div>
                   <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
                   <p className="mt-2 text-sm text-gray-600">{item.description}</p>
                 </div>
               )}
 
               {variant === 'card' && (
-                <div className="flex items-start gap-4 p-6 border border-[#A58219] rounded-xl h-full bg-white">
-                  <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-red-50">
-                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={80} className='w-12 h-auto' />
+                <div className="flex items-start gap-4 p-6 bg-amber-50 border border-[#A58219] rounded-xl h-full">
+                  <div className="flex-shrink-0 flex items-center justify-center w-15 h-15 rounded-full border border-[#a58210] bg-red-50">
+                    <Image src={item.icon} alt={`${item.title} icon`} width={100} height={100} className='w-auto h-auto' />
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-gray-900">{item.title}</h3>
