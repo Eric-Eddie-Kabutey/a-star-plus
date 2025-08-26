@@ -94,27 +94,27 @@ const whyChooseStarPlusPestControlData = {
 	title: 'Why Choose A Star Plus Pest Control?',
 	items: [
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Discreet Service',
 			description: 'Local Experts',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Safe Products',
 			description: 'Safe for Pets & Kids',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Treatment Options',
 			description: 'Fast Relief',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'A Bright Future',
 			description: 'Eco-Conscious',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: '100% Guarantee',
 			description: 'Satisfaction Guaranteed',
 		},

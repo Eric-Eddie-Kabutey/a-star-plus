@@ -170,6 +170,7 @@ export default function BedBug() {
 				description={signsOfBedBugsData.description}
 				items={signsOfBedBugsData.items}
 				variant='circularIcon'
+				iconBorder={true}
 			/>
 
       {/* Example 2: Image on the LEFT */}

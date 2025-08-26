@@ -34,23 +34,23 @@ const termitePreventionTipsData: FeatureGridData = {
 	),
 	items: [
 		{
-			icon: '/assets/residential/icons/moisture.png',
+			icon: '/assets/shared/icons/water-drop.png',
 			title: 'Moisture Control',
 			description:
 				'Eliminate moisture near the foundation and fix leaking pipes, roofs, and gutters.',
 		},
 		{
-			icon: '/assets/residential/icons/wood.png',
+			icon: '/assets/shared/icons/wood.png',
 			title: 'Distance Management',
 			description: 'Keep firewood and mulch away from your home.',
 		},
 		{
-			icon: '/assets/residential/icons/house.png',
+			icon: '/assets/shared/icons/house.png',
 			title: 'Foundation Care',
 			description: 'Seal cracks in your foundation and ensure proper drainage.',
 		},
 		{
-			icon: '/assets/residential/icons/search.png',
+			icon: '/assets/shared/icons/inspection.png',
 			title: 'Regular Inspections',
 			description: 'Schedule annual termite inspections with professionals.',
 		},
@@ -84,7 +84,7 @@ export default function TermiteControlsPage() {
 				items={termiteWarningSignsData.items}
 				bottomNote={termiteWarningSignsData.bottomNote}
 				variant='card'
-				id="termite-damage"
+				id="termite-damage"				
 			/>
 
 			<ComparisonTable
@@ -98,6 +98,7 @@ export default function TermiteControlsPage() {
 				id="flies-ant-vs-termite"
 			/>
 
+			{/* prevention tips */}
 			<FeatureGrid
 				tagline={termitePreventionTipsData.tagline}
 				title={termitePreventionTipsData.title}

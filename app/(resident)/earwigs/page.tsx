@@ -61,24 +61,24 @@ const signsOfEarwigsData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/danger.png',
+			icon: '/assets/residential/icons/earwigs/danger.png',
 			title: 'Indoor Spotting',
 			description:
 				'Earwigs spotted indoors, especially in bathrooms or laundry areas',
 		},
 		{
-			icon: '/assets/residential/icons/danger.png',
+			icon: '/assets/residential/icons/earwigs/danger.png',
 			title: 'Damaged Plants',
 			description:
 				'Damaged garden plants, seedlings, or unexplained plant deterioration',
 		},
 		{
-			icon: '/assets/residential/icons/danger.png',
+			icon: '/assets/residential/icons/earwigs/danger.png',
 			title: 'Pincer Marks',
 			description: 'Pincer-like damage marks on organic materials',
 		},
 		{
-			icon: '/assets/residential/icons/danger.png',
+			icon: '/assets/residential/icons/earwigs/danger.png',
 			title: 'Musty Areas',
 			description: 'Musty or damp-smelling areas with small insect clusters',
 		},

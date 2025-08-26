@@ -40,27 +40,27 @@ const signsOfRoachesData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/cockroach/search-icon.png',
+			icon: '/assets/residential/icons/cockroach/inspect.png',
 			title: 'Droppings resembling',
 			description: 'Droppings resembling black pepper or coffee grounds',
 		},
 		{
-			icon: '/assets/residential/icons/cockroach/search-icon.png',
+			icon: '/assets/residential/icons/cockroach/inspect.png',
 			title: 'Odour',
 			description: 'Musty, oily odour in closed spaces',
 		},
 		{
-			icon: '/assets/residential/icons/cockroach/search-icon.png',
+			icon: '/assets/residential/icons/cockroach/inspect.png',
 			title: 'Egg cases (oothecae)',
 			description: 'Egg cases (oothecae) in corners or behind furniture',
 		},
 		{
-			icon: '/assets/residential/icons/cockroach/search-icon.png',
+			icon: '/assets/residential/icons/cockroach/inspect.png',
 			title: 'Live or dead roaches',
 			description: 'Live or dead roaches at night or when lights are turned on',
 		},
 		{
-			icon: '/assets/residential/icons/cockroach/search-icon.png',
+			icon: '/assets/residential/icons/cockroach/inspect.png',
 			title: 'Shed skins',
 			description: 'Shed skins and parts near cracks and baseboards',
 		},
@@ -103,32 +103,32 @@ const roachControlExpertsData = {
 	title: "We're Your Roach Control Experts, Right Here in Texas",
 	items: [
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Discreet Service',
 			description: 'Same-day service for emergencies',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Safe Products',
 			description: 'Child and pet-safe treatments',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Treatment Options',
 			description: 'Affordable pricing and no hidden fees',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: '100% Reliable',
 			description: 'Trusted by homeowners, restaurants, and property managers',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Free Packages',
 			description: 'Free follow-up on certain plans',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: '100% Skilled Professionals',
 			description: 'Local knowledge of roach habits and hotspots',
 		},

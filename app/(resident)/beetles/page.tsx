@@ -86,27 +86,27 @@ const signsOfBeetlesData = {
 			description: 'Tiny round holes in wood, furniture, or floors',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/powdery-residue-beetle.png',
+			icon: '/assets/residential/icons/beetle/powery-residue.png',
 			title: 'Powdery residue (frass)',
 			description: 'Powdery residue (frass) near damaged wood',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/damage-thinning.png',
+			icon: '/assets/residential/icons/beetle/damaged-thinning-areas.png',
 			title: 'Damaged/thinning areas',
 			description: 'Damaged or thinning areas in rugs, clothing, or upholstery',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/live-or-dead-beetles.png',
 			title: 'Live or dead beetles',
 			description: 'Live or dead beetles in cabinets or around windowsills',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/foul-odors.png',
 			title: 'Foul odors',
 			description: 'Foul odors or spoiled pantry items',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/tiny-rounded-hole.png',
+			icon: '/assets/residential/icons/beetle/beetle-larvae-crawling.png',
 			title: 'Beetle larvae crawling',
 			description: 'Beetle larvae crawling on walls or baseboards',
 		},
@@ -235,6 +235,7 @@ export default function BeetlePage() {
 				description={signsOfBeetlesData.description}
 				items={signsOfBeetlesData.items}
 				variant='circularIcon'
+				iconBorder={true}
 			/>
 
 			{/* control process for beetle */}

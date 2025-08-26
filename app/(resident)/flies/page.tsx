@@ -100,27 +100,27 @@ const whyChooseStarPlusFlyControlData = {
 	title: 'Why Choose A Star Plus Pest Control?',
 	items: [
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Discreet Service',
 			description: 'Indoor & Outdoor Experts',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Safe Products',
 			description: 'Safe, Non-Toxic Methods',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Treatment Options',
 			description: 'Fast Relief, No Disruption',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'A Bright Future',
 			description: 'Licensed Local Technicians',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: '100% Guarantee',
 			description: 'Trusted Across Texas',
 		},

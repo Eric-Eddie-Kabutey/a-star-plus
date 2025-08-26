@@ -49,28 +49,28 @@ const signsOfCentipedesData: singsProcessData = {
 		"Early detection is key. If you notice any of the following, it's time to call for a professional inspection:",
 	items: [
 		{
-			icon: '/assets/residential/icons/centipedes/moon.svg',
+			icon: '/assets/residential/icons/centipedes-millipedes/nighttime-sightings.png',
 			title: 'Nighttime Sightings',
 			description:
 				'Sightings near sinks, tubs, or drains — especially at night',
 		},
 		{
-			icon: '/assets/residential/icons/centipedes/droplet.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/moisture-attraction.png',
 			title: 'Moisture Attraction',
 			description: 'Moist, humid areas in the home attracting insects',
 		},
 		{
-			icon: '/assets/residential/icons/centipedes/search.svg',
+			icon: '/assets/residential/icons/centipedes-millipedes/shed-evidence.png',
 			title: 'Shed Evidence',
 			description: 'Shed skins or legs found in baseboards or corners',
 		},
 		{
-			icon: '/assets/residential/icons/centipedes/nose.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/unpleasant-odors.png',
 			title: 'Unpleasant Odors',
 			description: 'Unpleasant odor when millipedes are crushed',
 		},
 		{
-			icon: '/assets/residential/icons/centipedes/movement.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/indoor-movement.png',
 			title: 'Indoor Movement',
 			description:
 				'Crawling insects with dozens of legs on basement walls or under furniture',
@@ -136,32 +136,32 @@ const moisturePestControlData = {
 	title: 'Proven Expertise in Moisture-Driven Pest Control',
 	items: [
 		{
-			icon: '/assets/residential/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Discreet Service',
 			description: 'Same-day and discreet service available',
 		},
 		{
-			icon: '/assets/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Safe Products',
 			description: 'Safe for kids, pets, and elderly',
 		},
 		{
-			icon: '/assets/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'Treatment Options',
 			description: 'Moisture assessment included in inspection',
 		},
 		{
-			icon: '/assets/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: '24/7 Availability',
 			description: 'Local Texas technicians who know the terrain',
 		},
 		{
-			icon: '/assets/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: 'A Bright Future',
 			description: 'Guaranteed results with affordable plans',
 		},
 		{
-			icon: '/assets/residential/icons.',
+			icon: '/assets/shared/icons/checked-mark.png',
 			title: '100% Skilled Professionals',
 			description: 'Licensed, insured, and background-checked professionals',
 		},
@@ -182,33 +182,33 @@ const centipedePreventionTipsData = {
 	),
 	items: [
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/dehumidify.png',
 			title: 'Dehumidify',
 			description: 'Use a dehumidifier in basements and bathrooms',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/seal-cracks.png',
 			title: 'Seal Cracks',
 			description: 'Seal cracks around windows, doors, and foundations',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/fix-leaks.png',
 			title: 'Fix Leaks',
 			description: 'Fix leaky faucets, drains, and pipes',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/remove-debris.png',
 			title: 'Remove Debris',
 			description:
 				"Keep leaf litter and mulch away from your home's foundation",
 		},
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/regular-cleaning.png',
 			title: 'Regular Cleaning',
 			description: 'Vacuum dark corners, under sinks, and baseboards regularly',
 		},
 		{
-			icon: '/assets/residential/icons/beetle/store-properly.png',
+			icon: '/assets/residential/icons/centipedes-millipedes/storage-distance.png',
 			title: 'Storage Distance',
 			description: 'Store firewood and compost at least 20 feet from your home',
 		},
@@ -251,6 +251,7 @@ export default function CentipedesMillipedesPage() {
 				description={signsOfCentipedesData.description}
 				items={signsOfCentipedesData.items}
 				variant='circularIcon'
+				
 			/>
 
 			{/* process control */}

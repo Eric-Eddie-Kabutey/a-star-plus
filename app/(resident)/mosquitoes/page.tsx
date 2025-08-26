@@ -85,30 +85,30 @@ const whyChooseStarPlusMosquitoControlData = {
 	title: 'Why Choose A Star Plus Pest Control?',
 	items: [
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Fast-Acting Results',
 			description:
 				'Barrier that provides immediate relief and extended protection.',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Family & Pet Safe',
 			description: 'Safe for kids, pets & pollinators like bees',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Health Protection',
 			description:
 				'Helps reduce risk of mosquito-borne illnesses like West Nile Virus.',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Texas Climate Expertise',
 			description:
 				'Locally tailored treatments specifically designed for Texas climates',
 		},
 		{
-			icon: '/assets/residential/icons/checked.png',
+			icon: '/assets/shared/icons/check-circle.png',
 			title: 'Affordable Plans',
 			description:
 				'Budget-friendly seasonal plans available to keep your property protected.',
