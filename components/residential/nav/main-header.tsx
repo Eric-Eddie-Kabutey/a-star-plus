@@ -151,7 +151,7 @@ export function MainHeader() {
 									</ScrollArea>
 									<div className='mt-auto flex flex-col space-y-4 pt-6 border-t'>
 										<Link
-											href='#'
+											href='/login'
 											onClick={() => setIsMobileMenuOpen(false)}
 											className='text-lg font-medium text-center text-gray-700 hover:text-red-600'>
 											Login
