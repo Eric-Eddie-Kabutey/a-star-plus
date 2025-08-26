@@ -35,7 +35,7 @@ export function MegaMenu({ submenu }: MegaMenuProps) {
       animate="animate"
       exit="exit"
       transition={{ duration: 0.2, ease: 'easeInOut' }}
-      className="absolute top-full left-0 right-0"
+      className="absolute top-full left-1/2 -translate-x-1/2"
     >
       <div className="container mx-auto px-4 flex justify-items-center">
         <div className="inline-block mt-2 bg-white rounded-xl shadow-lg p-8">
@@ -43,7 +43,7 @@ export function MegaMenu({ submenu }: MegaMenuProps) {
                   {/* Use dynamic grid columns */}
                   <div className={cn(`grid grid-cols-1 gap-x-8 gap-y-4`, `md:grid-cols-${numColumns}`)}></div>
                   
-          <div className={`grid grid-cols-1 md:grid-cols-6 gap-x-8 gap-y-4`}>
+          <div className={`grid grid-cols-[200px_minmax(300px,_1fr)_100px] gap-x-8 gap-y-4`}>
             {chunkedColumns.map((column, colIndex) => (
               <div key={colIndex} className="flex flex-col space-y-3">
                  {column.map((link) => (
