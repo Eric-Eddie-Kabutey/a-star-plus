@@ -116,8 +116,8 @@ export function MainHeader() {
 										/>
                   </ScrollArea>
                     <div className="mt-auto flex flex-col space-y-4 pt-6 border-t">
-                      <Link href="#" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-center text-gray-700 hover:bg-[#000089]">Login</Link>
-                      <button onClick={() => { setIsAccountDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg border bg-[#000084] py-2.5 text-lg font-semibold  hover:bg-blue-50">Create an account</button>
+                      <Link href="/login" onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-center text-gray-700 hover:bg-[#000089]">Login</Link>
+                      <button onClick={() => { setIsAccountDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg border text-white bg-[#000084] py-2.5 text-lg font-semibold  hover:bg-blue-50">Create an account</button>
                       <button onClick={() => { setIsQuoteDialogOpen(true); setIsMobileMenuOpen(false); }} className="rounded-lg bg-[#000084] py-2.5 text-lg font-semibold text-white hover:bg-[#000089]">Get a Quote</button>
                     </div>
                   </nav>                                 
