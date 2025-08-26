@@ -14,9 +14,15 @@ function MobileAuthHeader() {
       className="lg:hidden fixed top-0 left-0 right-0 z-10 bg-white/80 backdrop-blur-sm shadow-sm"
     >
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <Link href="/">          
-          <Image src="/assets/logos/logo.png" alt="A start puls logo" width={110} height={32} />
-        </Link>
+       <Link href='/'>
+						<Image
+							src='/assets/shared/logos/logo.png'
+							alt='Logo'
+							width={110}
+							height={32}
+							className='h-14 w-auto md:h-16 lg:h-20'
+						/>
+					</Link>
         {/* This part can be made dynamic based on the current route if needed */}
         <p className="text-sm">
           Have an account?{' '}

@@ -6,6 +6,8 @@ import { ArrowLeft } from 'lucide-react';
 import { motion, Variants } from '@/components/module/framer-motion';
 import { GoogleIcon } from '@/components/icons/google-icon';
 import Image from 'next/image';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -27,7 +29,16 @@ export default function SignUpPage() {
     >
       {/* Top section with Logo and Sign In link */}
       <div className="hidden lg:flex items-center justify-between">
-        <Image src="/assets/logos/logo.png" alt="A start puls logo" width={110} height={32} />
+         <Link href='/'>
+						<Image
+							src='/assets/shared/logos/logo.png'
+							alt='Logo'
+							width={110}
+							height={32}
+							className='h-14 w-auto md:h-16 lg:h-20'
+						/>
+        </Link>
+        
         <p className="text-sm">
           Have an account?{' '}
           <Link href="/login" className="font-bold text-red-600 hover:underline">
@@ -67,22 +78,22 @@ export default function SignUpPage() {
 
         <form className="space-y-4">
           <div className="flex flex-col sm:flex-row gap-4">
-            <motion.div variants={itemVariants} className="w-full">
-              <label htmlFor="first-name" className="text-sm font-medium">First Name</label>
-              <input id="first-name" type="text" placeholder="John" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+            <motion.div variants={itemVariants} className="w-full">              
+              <Label htmlFor="first-name" className="text-sm font-medium">First-name</Label>
+              <Input id="first-name" placeholder="John" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />   
             </motion.div>
-            <motion.div variants={itemVariants} className="w-full">
-              <label htmlFor="last-name" className="text-sm font-medium">Last Name</label>
-              <input id="last-name" type="text" placeholder="Doe" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+            <motion.div variants={itemVariants} className="w-full">              
+              <Label htmlFor="last-name" className="text-sm font-medium">Last-name</Label>
+              <Input id="last-name" placeholder="Doe" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
             </motion.div>
           </div>
-          <motion.div variants={itemVariants}>
-            <label htmlFor="email" className="text-sm font-medium">Email Address</label>
-            <input id="email" type="email" placeholder="example@gmail.com" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+          <motion.div variants={itemVariants}>            
+            <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+            <Input id="email" placeholder="example@gmail.com" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
           </motion.div>
-          <motion.div variants={itemVariants}>
-            <label htmlFor="phone" className="text-sm font-medium">Phone Number</label>
-            <input id="phone" type="tel" placeholder="eg., +1 214 000 000" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+          <motion.div variants={itemVariants}>            
+            <Label htmlFor="phone" className="text-sm font-medium">Phone</Label>
+            <Input id="phone" type="tel" placeholder="eg., +1 214 000 000" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
           </motion.div>
           <motion.div variants={itemVariants} className="pt-4">
             <button type="submit" className="w-full rounded-md bg-red-600 py-2.5 font-semibold text-white shadow-sm hover:bg-red-700 transition-colors">

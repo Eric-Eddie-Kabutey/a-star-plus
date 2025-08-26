@@ -7,6 +7,8 @@ import { motion, Variants } from '@/components/module/framer-motion';
 import { useState } from 'react';
 import { GoogleIcon } from '@/components/icons/google-icon';
 import Image from 'next/image';
+import { Label } from '@/components/ui/label';
+import { Input } from '@/components/ui/input';
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -30,7 +32,16 @@ export default function LoginPage() {
     >
       {/* Top section for Desktop */}
       <div className="hidden lg:flex items-center justify-between">
-        <Image src="/assets/logos/logo.png" alt="A start puls logo" width={110} height={32} />
+        <Link href='/'>
+						<Image
+							src='/assets/shared/logos/logo.png'
+							alt='Logo'
+							width={100}
+							height={32}
+							className='h-14 w-auto md:h-16 lg:h-20'
+						/>
+					</Link>
+        
         <p className="text-sm">
           Don&apos;t have an account?{' '}
           <Link href="/signup" className="font-bold text-red-600 hover:underline">
@@ -66,19 +77,22 @@ export default function LoginPage() {
 
         <form className="space-y-4">
           <motion.div variants={itemVariants}>
-            <label htmlFor="email" className="text-sm font-medium">Email Address</label>
-            <input id="email" type="email" placeholder="example@gmail.com" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+             <Label htmlFor="email" className="text-sm font-medium">Email</Label>
+            <Input id="email" placeholder="example@gmail.com" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />       
           </motion.div>
           <motion.div variants={itemVariants} className="relative">
-            <label htmlFor="password"  className="text-sm font-medium">Password</label>
-            <input id="password" type={showPassword ? 'text' : 'password'} placeholder="Enter your password" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+            <Label htmlFor="password" className="text-sm font-medium">Password</Label>
+            <Input id="password" placeholder="Enter your password" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-red-500 focus:ring-red-500" />
+          
             <button type="button" onClick={() => setShowPassword(!showPassword)} className="absolute right-3 top-8 text-gray-400 hover:text-gray-600">
               {showPassword ? <EyeOff className="w-5 h-5" /> : <Eye className="w-5 h-5" />}
             </button>
           </motion.div>
           <motion.div variants={itemVariants} className="flex items-center justify-between text-sm">
-             <div><input type="checkbox" id="remember-me" className="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-600" /> <label htmlFor="remember-me">Remember me</label></div>
-             <Link href="/forgot-password" className="font-medium text-red-600 hover:underline">Forgot password?</Link>
+            <div>
+              <input type="checkbox" id="remember-me" className="h-4 w-4 rounded border-gray-300 text-red-600 focus:ring-red-600" /> <label htmlFor="remember-me">Remember me</label>
+            </div>
+             <Link href="#" className="font-medium text-red-600 hover:underline">Forgot password?</Link>
           </motion.div>
           <motion.div variants={itemVariants} className="pt-4">
             <button type="submit" className="w-full rounded-md bg-red-600 py-2.5 font-semibold text-white shadow-sm hover:bg-red-700 transition-colors">
@@ -92,8 +106,8 @@ export default function LoginPage() {
       <div className="hidden lg:flex items-center justify-between text-xs text-gray-500 mt-auto pt-8">
         <p>&copy; {new Date().getFullYear()} A Star Plus. All rights reserved.</p>
         <div className="flex gap-4">
-          <Link href="/terms" className="hover:underline">Terms of Service</Link>
-          <Link href="/privacy" className="hover:underline">Privacy Policy</Link>
+          <Link href="#" className="hover:underline">Terms of Service</Link>
+          <Link href="#" className="hover:underline">Privacy Policy</Link>
         </div>
       </div>
     </motion.div>
