@@ -109,17 +109,19 @@ export function MainHeader() {
 							</SheetTrigger>
 							<SheetContent>
 								<nav className='px-2 py-4 mt-8 flex h-full flex-col'>
-									<Accordion type='single' collapsible className='w-full'>
-										{navigationData.map((item) =>
-											item.submenu ? (
-												<AccordionItem value={item.label} key={item.label}>
-													<AccordionTrigger className='text-lg'>
-														{item.label}
-													</AccordionTrigger>
-													{/* Wrap the main navigation content in a ScrollArea */}
-														<ScrollArea>
-													<AccordionContent>
-															<div className='flex flex-col space-y-3 pl-4'>
+									<ScrollArea className='flex-grow h-0 pr-4'>
+										<Accordion type='single' collapsible className='w-full'>
+											{navigationData.map((item) =>
+												item.submenu ? (
+													<AccordionItem value={item.label} key={item.label}>
+														<AccordionTrigger className='text-lg'>
+															{item.label}
+														</AccordionTrigger>
+														{/* Wrap the main navigation content in a ScrollArea */}
+														<AccordionContent>
+															<ScrollArea className="max-h-[60vh] pr-2">
+
+															<div className='flex flex-col space-y-3 p-4'>
 																{item.submenu.columns
 																	.flatMap((col) => col.links)
 																	.map((link) => (
@@ -127,21 +129,26 @@ export function MainHeader() {
 																			key={link.label}
 																			href={link.href}
 																			onClick={() => setIsMobileMenuOpen(false)}
-																			className='text-gray-600 hover:text-red-600'>
+																			className='text-base text-gray-600 hover:text-red-600'>
 																			{link.label}
 																		</Link>
 																	))}
-															</div>
-                              </AccordionContent>
-															<ScrollBar
-																orientation='vertical'
-																className='w-2 bg-gray-300 rounded-full'
-															/>
-														</ScrollArea>
-												</AccordionItem>
-											) : null
-										)}
-									</Accordion>
+																</div>
+																<ScrollBar
+											orientation='vertical'
+											className='w-2 bg-gray-300 rounded-full'
+										/>
+															</ScrollArea>
+														</AccordionContent>
+													</AccordionItem>
+												) : null
+											)}
+										</Accordion>
+										<ScrollBar
+											orientation='vertical'
+											className='w-2 bg-gray-300 rounded-full'
+										/>
+									</ScrollArea>
 									<div className='mt-auto flex flex-col space-y-4 pt-6 border-t'>
 										<Link
 											href='#'
