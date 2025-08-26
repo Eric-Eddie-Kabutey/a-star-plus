@@ -41,19 +41,11 @@ export function CtaSection({
 
 	return (
 		<section className='py-12 md:py-20 bg-gray-900'>
-			{colorScheme === 'red' ? (
-				<QuoteDialog
-					open={isQuoteDialogOpen}
-          onOpenChange={setIsQuoteDialogOpen}
-          buttonColor='blue'
-				/>
-			) : (
-				<QuoteDialog
-					open={isQuoteDialogOpen}
-					onOpenChange={setIsQuoteDialogOpen}
-				/>
-			)}
-
+			<QuoteDialog
+				open={isQuoteDialogOpen}
+				onOpenChange={setIsQuoteDialogOpen}
+				buttonColor='blue'
+			/>
 			<div className='container lg:max-w-5xl xl:max-w-7xl px-4 sm:px-6 mx-auto'>
 				<motion.div
 					className={cn(
