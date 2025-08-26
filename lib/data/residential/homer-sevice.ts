@@ -16,7 +16,7 @@ export const homeServiceOverviewData: SectionHeaderData = {
 
 const servicesList: ServiceCardData[] = [
   {
-    icon: "/assets/residential/icons/ice-start.png",
+    icon: "/assets/residential/icons/home-service/attic-insulation.png",
     title: 'Attic Insulation',
     subtitle: 'Keep Pests Out. Keep Energy In.',
     description: "Proper insulation doesn't just reduce your energy bill — it acts as a barrier to insects, rodents, and wildlife.",
@@ -30,7 +30,7 @@ const servicesList: ServiceCardData[] = [
     footerNote: 'Great for new homes or older homes with infestations or heat-loss issues.',
   },
   {
-    icon: "/assets/residential/icons/rodent.png",
+    icon: "/assets/residential/icons/home-service/wildlife-management.png",
     title: 'Wildlife Management',
     subtitle: 'Safe, Humane, and Effective Wildlife Removal',
     description: "Wildlife in your home is dangerous — not just structurally, but to your health. We remove, relocate, and prevent re-entry.",
@@ -44,7 +44,7 @@ const servicesList: ServiceCardData[] = [
     footerNote: 'All removal is done humanely and in compliance with local laws.',
   },
   {
-    icon: "/assets/residential/icons/moisture.png",
+    icon: "/assets/residential/icons/home-service/stop-moisture.png",
     title: 'Moisture Control',
     subtitle: 'Stop Moisture. Stop Pests.',
     description: 'Damp environments are breeding grounds for mold, wood rot, and pests like termites, cockroaches, and centipedes.',
@@ -58,7 +58,7 @@ const servicesList: ServiceCardData[] = [
     footerNote: 'Moisture issues are one of the top causes of long-term home pest problems.',
   },
   {
-    icon: "/assets/residential/icons/protection.png",
+    icon: "/assets/residential/icons/home-service/wildlife-prevention.png",
     title: 'Wildlife & Rodent Prevention Program',
     subtitle: 'Prevention > Infestation',
     description: 'This premium program is for homeowners who want total protection from wildlife and rodents — year-round.',
@@ -72,7 +72,7 @@ const servicesList: ServiceCardData[] = [
     footerNote: 'Perfect for rural, wooded, or older properties.',
   },
   {   
-    icon: "/assets/residential/icons/leafs.png",
+    icon: "/assets/residential/icons/home-service/seasonal-pest.png",
     title: 'Seasonal Pest Protection',
     subtitle: 'Because Every Season Brings a New Pest.',
     description: 'As seasons change, different pests become active. We tailor your pest defense for spring, summer, fall, and winter threats.',
@@ -84,7 +84,7 @@ const servicesList: ServiceCardData[] = [
     footerNote: 'We proactively treat your home before pests strike.',
   },
   {
-    icon: "/assets/residential/icons/leaf.png",
+    icon: "/assets/residential/icons/home-service/leaf-stopper.png",
     title: 'Leaf Stopper',
     subtitle: 'Say Goodbye to Clogged Gutters and Nesting Insects',
     description: 'The Leaf Stopper® Gutter Protection System is a physical barrier that prevents leaves, debris, and pests from clogging your gutters.',
@@ -130,22 +130,22 @@ export const contactData: ContactSectionData = {
   description: 'Got Questions? Let’s Talk. From pest ID to treatment choices, we’re always here to answer. Use our form to get quick advice directly from our experts.',
   contactDetails: [
     {
-      icon: "/assets/icons/a-star-plus/location.png",
+      icon: "/assets/residential/icons/contact/location.png",
       title: 'Service Area',
       lines: ['Serving all of Texas with locations in Dallas, Houston, Austin, and San Antonio'],
     },
     {
-      icon: "/assets/icons/a-star-plus/phone.png",
+      icon: "/assets/residential/icons/contact/phone.png",
       title: 'Call Us',
       lines: ['(233) 123-456-7890'],
     },
     {
-      icon: "/assets/icons/a-star-plus/mail.png",
+      icon: "/assets/residential/icons/contact/mail.png",
       title: 'Email Us',
       lines: ['info@astarplus.com'],
     },
     {
-      icon: "/assets/icons/a-star-plus/clock.png",
+      icon: "/assets/residential/icons/contact/time.png",
       title: 'Hours',
       lines: [
         'Monday - Saturday: 7am - 7pm',
