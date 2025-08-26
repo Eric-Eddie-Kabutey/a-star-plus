@@ -1,11 +1,12 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import { motion, Variants } from '@/components/module/framer-motion';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 import Image from 'next/image';
 import { cn } from '@/lib/utils';
+import { QuoteDialog } from '../residential/nav/dialog-quote';
 
 interface FeatureItem {
   icon: string;
@@ -37,6 +38,7 @@ export function FeatureGrid({
   cta,  
   id,
 }: FeatureGridSectionProps) {
+  const [isQuoteDialogOpen, setIsQuoteDialogOpen] = useState(false)
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -58,6 +60,10 @@ export function FeatureGrid({
   return (
     // #fdf8f8
     <section id={id ? `${id}` : ""} className="py-16 md:py-24" style={{ backgroundColor: '#fff' }}>
+      <QuoteDialog
+              open={isQuoteDialogOpen}
+              onOpenChange={setIsQuoteDialogOpen}
+            />
       <div className="container lg:max-w-5xl xl:max-w-7xl mx-auto px-4 sm:px-6">        
         <div className="text-center mb-12 max-w-4xl mx-auto flex flex-col gap-2 md-gap-4">
           <p className="text-red-600 font-bold uppercase tracking-wider text-sm mb-2">
@@ -122,7 +128,13 @@ export function FeatureGrid({
         {cta && (
           <div className="text-center mt-16">
             <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-base md:text-lg py-6 px-4 md:px-8 rounded-lg">
-              <Link href={cta.href}>{cta.text}</Link>              
+              <button
+							onClick={() => {
+								setIsQuoteDialogOpen(true)
+							}}
+							className=' text-center rounded-md bg-red-600 px-8 py-3 text-base font-semibold text-white shadow-sm hover:bg-red-700 transition-colors'>
+							Schedule a Free Inspection
+						</button>          
             </Button>
           </div>
         )}
