@@ -64,7 +64,7 @@ export function ContactSection({
             {contactDetails.map((detail, index) => (
               <div key={index} className="flex items-start gap-4">
                 <div className="flex-shrink-0 flex items-center justify-center w-12 h-12 rounded-full bg-red-100">                        
-                        <Image src={detail.icon} alt={detail.title} width={100} height={80} className="w-6 h-6" />
+                        <Image src={detail.icon} alt={detail.title} width={100} height={100} className="w-auto h-auto" />
                 </div>
                 <div>
                   <h3 className="text-lg font-bold text-gray-800">{detail.title}</h3>
