@@ -76,14 +76,15 @@ export function ComprehensiveServices({
 							variants={itemVariants}>
 							<div className='flex-grow'>
 								<div className='flex items-center gap-4 mb-4'>
-									
+									<div className="flex-shrink-0 flex items-center justify-center w-15 h-15 rounded-full border border-red-500">
 										<Image
 											src={service.icon}
 											alt={service.accordionTitle}
 											width={100}
 											height={80}
-											className='w-auto h-6 md:h-12'
+											className='w-auto h-auto'
 										/>
+									</div>
 									<div>
 										<h3 className='text-lg font-bold text-gray-900'>
 											{service.title}
