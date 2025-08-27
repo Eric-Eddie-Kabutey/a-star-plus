@@ -98,7 +98,11 @@ export function MainHeader() {
                           </AccordionTrigger>
                           {/* Wrap the main navigation content in a ScrollArea */}
                             <AccordionContent>
-                          <ScrollArea className="max-h-[60vh] pr-2">
+                            <ScrollArea className="max-h-[60vh] pr-2">
+                              <Link href={item.href}
+																onClick={() => setIsMobileMenuOpen(false)}
+																			className='px-2.5 text-lg text-gray-800 hover:text-red-600'
+																>{item.label}:</Link>
                               <div className="flex flex-col space-y-3 p-4">
                                 {item.submenu.columns.flatMap(col => col.links).map(link => (
                                   <Link key={link.label} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-base text-gray-600 hover:bg-[#000089]">{link.label}</Link>

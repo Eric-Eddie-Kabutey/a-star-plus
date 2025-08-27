@@ -120,7 +120,10 @@ export function MainHeader() {
 														{/* Wrap the main navigation content in a ScrollArea */}
 														<AccordionContent>
 															<ScrollArea className="max-h-[60vh] pr-2">
-
+																<Link href={item.href}
+																onClick={() => setIsMobileMenuOpen(false)}
+																			className='px-2.5 text-lg text-gray-800 hover:text-red-600'
+																>{item.label}:</Link>
 															<div className='flex flex-col space-y-3 p-4'>
 																{item.submenu.columns
 																	.flatMap((col) => col.links)
