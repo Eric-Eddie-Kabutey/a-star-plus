@@ -91,9 +91,9 @@ export function HeroSection({
 							Book a Free Ant Inspection
 						</button>
 						<Link
-							href='tel:1234567890'
+							href='tel:4698770769'
 							className='w-full bg-white border-1 border-red-600 text-red-600 hover:bg-red-50 hover:text-red-700 text-lg py-2 rounded-lg'>
-							Call Now: (123) 456-7890
+							Call Now: 4698770769
 						</Link>
 					</motion.div>
 				</motion.div>

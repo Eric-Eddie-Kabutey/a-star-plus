@@ -80,9 +80,9 @@ export function HeroSection({
 								{action[0]}
 							</button>
 							<button className='text-white bg-transparent border border-white/50 hover:bg-white/10 hover:text-white w-full sm:w-auto text-base py-4 px-10 rounded-lg'>
-								<Link href='tel:2331234567890' className='flex items-center justify-center gap-2'>
+								<Link href='tel:4698770769' className='flex items-center justify-center gap-2'>
 									<Phone className='mr-2 h-5 w-5' />
-									(233) 123-456-7890
+									4698770769
 								</Link>
 							</button>
 						</div>
