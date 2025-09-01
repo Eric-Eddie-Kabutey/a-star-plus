@@ -132,12 +132,12 @@ export const contactData: ContactSectionData = {
     {
       icon: "/assets/residential/icons/contact/location.png",
       title: 'Service Area',
-      lines: ['Serving all of Texas with locations in Dallas, Houston, Austin, and San Antonio'],
+      lines: ['Serving all of Texas with locations in 401 Century Pkwy box 1066, Allen, TX 75013'],
     },
     {
       icon: "/assets/residential/icons/contact/phone.png",
       title: 'Call Us',
-      lines: ['(233) 123-456-7890'],
+      lines: ['4698770769'],
     },
     {
       icon: "/assets/residential/icons/contact/mail.png",

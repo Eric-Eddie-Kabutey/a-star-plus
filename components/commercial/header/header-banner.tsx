@@ -107,7 +107,7 @@ export function HeaderBanner() {
           variants={contentVariants}
           className="hidden flex-1 justify-end whitespace-nowrap text-sm text-gray-300 md:flex"
         >
-          Need Help? <span className="ml-1 font-medium text-white">Dial (855) 485-6300</span>
+          Need Help? <span className="ml-1 font-medium text-white">Dial 4698770769</span>
         </motion.p>
       </motion.div>
     </div>
