@@ -132,7 +132,7 @@ export const contactData: ContactSectionData = {
     {
       icon: "/assets/residential/icons/contact/location.png",
       title: 'Service Area',
-      lines: ['Serving all of Texas with locations in 401 Century Pkwy box 1066, Allen, TX 75013'],
+      lines: [ 'Serving all of Texas with locations in 163 Town Pl #39 Fairview, TX 75069' ],
     },
     {
       icon: "/assets/residential/icons/contact/phone.png",
