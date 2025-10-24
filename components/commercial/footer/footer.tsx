@@ -82,6 +82,13 @@ export function Footer() {
                       </a>
                     ))}
                   </div>
+
+                  {/* Address  */}
+									<div className='mt-6'>
+										<h3 className='mb-4 text-sm font-semibold leading-6'>Location</h3>
+									<p className='text-sm text-gray-400 max-w-sm'>163 Town Pl #39 Fairview, TX 75069</p>
+
+									</div>
                 </motion.div>
 
                 {/* Columns 2, 3, 4: Links */}
